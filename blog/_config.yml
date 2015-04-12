@@ -9,9 +9,10 @@ url:              http://proshik.github.io
 paginate:         2
 baseurl:          /
 
+markdown: redcarpet
+
 author:
   name:           Proxor Krylov
-  url:            https://twitter.com/proshik
 
 # Custom vars
 version:          1.0.0

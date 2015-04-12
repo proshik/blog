@@ -4,7 +4,7 @@
  <title>Записки начинающего программиста</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2015-04-12T14:58:26+03:00</updated>
+ <updated>2015-04-12T16:05:44+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
    <name>Proxor Krylov</name>
@@ -14,27 +14,25 @@
  
  <entry>
    <title>После установки Ubuntu</title>
-   <link href="http://proshik.github.io//2015/04/12/first-page-on-blog/"/>
+   <link href="http://proshik.github.io//2015/04/12/after-ubuntu-install/"/>
    <updated>2015-04-12T00:00:00+03:00</updated>
-   <id>http://proshik.github.io/2015/04/12/first-page-on-blog</id>
+   <id>http://proshik.github.io/2015/04/12/after-ubuntu-install</id>
    <content type="html">&lt;h2&gt;Вступление&lt;/h2&gt;
 
-&lt;p&gt;В очередной раз вернувшись домой, с уверенностью, что будет мало свободного времени, а
+&lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
 Решил, что форточка под номером 7, соверешнно не то, взял лишний жесткий и поставил на него 
 Ubuntu. Только вот оказалось я ежедневно пользуюсь таким большим количеством программ,
 что пришлось вспоминать как же все это устанавливать. Я вообще удивляюсь, как люди запоминают
 название всех этих зависимостей и команд linux.&lt;/p&gt;
 
-&lt;p&gt;Так что вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
+&lt;p&gt;Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
 
 &lt;h2&gt;В первую очередь&lt;/h2&gt;
 
 &lt;h3&gt;Google Chrome&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sudo apt-key add -
-
 sudo sh -c &lt;span class=&quot;s1&quot;&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
-
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -54,7 +52,11 @@ sudo apt-get install ubuntu-tweak
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get update
 sudo apt-get install skype &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get -f install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;А если зачется открыть IntelliJ IDEA&lt;/h2&gt;
+&lt;h3&gt;Dropbox&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget -O - &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://www.dropbox.com/download?plat=lnx.x86_64&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; tar xzf -
+~/.dropbox-dist/dropboxd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Если зачется открыть IntelliJ IDEA&lt;/h2&gt;
 
 &lt;h3&gt;Java&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:webupd8team/java
@@ -73,17 +75,26 @@ sudo apt-get update
 
 &lt;h3&gt;Postgresql&lt;/h3&gt;
 
-&lt;p&gt;Установка;&lt;/p&gt;
+&lt;p&gt;В своих проектах я использую чаще всего именно эту СУБД.
+Установка;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
 apt-get install postgresql-9.4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Подключаемся к серверу postgresql и добавляем роль:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# CREATE DATABASE test_database;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# CREATE USER postgres WITH password &amp;#39;1&amp;#39;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_database&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;USER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Maven, git, gradle&lt;/h3&gt;
+&lt;h3&gt;Git, maven, gradle, geany&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install git
+sudo apt-get install maven
 
+sudo add-apt-repository ppa:cwchien/gradle
+sudo apt-get update
+
+sudo apt-get install gradle
+sudo apt-get install geany
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Написать статью в блог a.k.a. dependency for Jekyll&lt;/h2&gt;
 
 &lt;p&gt;Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
@@ -92,7 +103,7 @@ apt-get install postgresql-9.4
 предварительно поставим еще NodeJS и npm.&lt;/p&gt;
 
 &lt;h3&gt;NodeJS&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install nodejs
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;sudo apt-get install nodejs
 sudo apt-get install npm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Ruby&lt;/h3&gt;
@@ -100,7 +111,6 @@ sudo apt-get install npm
 
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
 wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.1.tar.gz
-
 tar -xzvf ruby-2.2.1.tar.gz
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ruby-2.2.1/
 ./configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local
@@ -110,7 +120,10 @@ ruby -v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Менеджер пакетов Ruby&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install bundler
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
+но если что придет на ум, вспомню и допишу!&lt;/em&gt;&lt;/p&gt;
+</content>
  </entry>
  
 
