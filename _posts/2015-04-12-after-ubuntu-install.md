@@ -53,7 +53,14 @@ sudo apt-get install skype && sudo apt-get -f install
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
 ```
+### SMPlayer ###
+Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм
 
+```bash
+sudo add-apt-repository ppa:rvm/smplayer
+sudo apt-get update
+sudo apt-get install smplayer smplayer-themes smplayer-translations
+```
 
 ## Если зачется открыть IntelliJ IDEA ##
 ### Java ###
