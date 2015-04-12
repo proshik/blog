@@ -3,10 +3,10 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            На потом о java, linux
-tagline:          'А то детали всегда забываются'
+title:            Записки начинающего программиста
+tagline:          О том, что все нормальные люди запоминают, а я почему-то не могу
 url:              http://proshik.github.io
-paginate:         10
+paginate:         2
 baseurl:          /
 
 author:
@@ -20,5 +20,7 @@ github:
 
 #Links
 pages_list:
-  Архив записей: '/archive'
+  Архив: '/archive'
   О блоге: '/about'
+
+markdown: redcarpet

@@ -1,30 +1,15 @@
 ---
 layout: page
-title: About
+title: О чем здесь можно почитать
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+В блоге буду писать о том, чего не часто приходтся касаться и что соответственно легко забывается.
+Возможно о том, что для себя открою в разработке на java и связанных технологиях. Постоянной борьбе с 
+ubuntu и том как же все-таки я рад, что наконец покинул лагерь форточников. А так же о том, 
+зачем и почему я постоянно занимаюсь гиревым спортом.
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Спасибо, приятного чтени!
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+* [E-mail](mailto:proxorkrylov@gmail.com)
+* [GitHub](https://github.com/proshik)
+* [Instagram](https://instagram.com/proshik)

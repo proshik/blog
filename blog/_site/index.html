@@ -10,7 +10,7 @@
 
   <title>
     
-    На потом о java, linux &middot; А то мелочи всегда забываются
+    Записки начинающего программиста &middot; О том, что все нормальные люди запоминают, а я почему-то не могу
     
   </title>
 
@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="На потом о java, linux" href="/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Записки начинающего программиста" href="/atom.xml">
 </head>
 
 
@@ -32,7 +32,7 @@
     <div class="container content">
       <header class="masthead">
         <h3 class="masthead-title">
-          <a href="/" title="Home">На потом о java, linux</a>
+          <a href="/" title="Home">Записки начинающего программиста</a>
 
           
           &nbsp;&nbsp;&nbsp;
@@ -42,7 +42,7 @@
           <small><a href="/about">О блоге</a></small>
           
 
-          <p><small>А то мелочи всегда забываются</small></p>
+          <p><small>О том, что все нормальные люди запоминают, а я почему-то не могу</small></p>
         </h3>
       </header>
 
@@ -51,222 +51,107 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2014/01/02/introducing-poole/">
-        Introducing Poole
+      <a href="/2015/04/12/first-page-on-blog/">
+        После установки Ubuntu
       </a>
     </h1>
 
-    <time datetime="2014-01-02T00:00:00+04:00" class="post-date">02 Jan 2014</time>
+    <time datetime="2015-04-12T00:00:00+03:00" class="post-date">12 Apr 2015</time>
 
-    <p><em>The Strange Case of Dr. Jekyll and Mr. Hyde</em> tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.</p>
+    <h2>Вступление</h2>
 
-<hr />
+<p>В очередной раз вернувшись домой, с уверенностью, что будет мало свободного времени, а
+проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
+Решил, что форточка под номером 7, соверешнно не то, взял лишний жесткий и поставил на него 
+Ubuntu. Только вот оказалось я ежедневно пользуюсь таким большим количеством программ,
+что пришлось вспоминать как же все это устанавливать. Я вообще удивляюсь, как люди запоминают
+название всех этих зависимостей и команд linux.</p>
 
-<p>Poole is the butler for <a href="http://jekyllrb.com">Jekyll</a>, the static site generator. It’s designed and developed by <a href="https://twitter.com/mdo">@mdo</a> to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.</p>
+<p>Так что вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.</p>
 
-<p>There are currently two themes built on Poole:</p>
+<h2>В первую очередь</h2>
 
-<ul>
-  <li><a href="http://hyde.getpoole.com">Hyde</a></li>
-  <li><a href="http://lanyon.getpoole.com">Lanyon</a></li>
-</ul>
+<h3>Google Chrome</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub <span class="p">|</span> sudo apt-key add -
 
-<p>Learn more and contribute on <a href="https://github.com/poole">GitHub</a>.</p>
+sudo sh -c <span class="s1">&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google-chrome.list&#39;</span>
 
-<h3 id="whats-included">What’s included</h3>
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+</code></pre></div>
+<h3>Ubuntu Tweak</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:tualatrix/ppa
+sudo apt-get update 
+sudo apt-get install ubuntu-tweak
+</code></pre></div>
+<h3>Skype</h3>
 
-<p>Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:</p>
+<p>Добавляем репозиторий &quot;партнеров Canonical&quot;</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="s2">&quot;deb http://archive.canonical.com/ $(lsb_release -sc) partner&quot;</span>
+</code></pre></div>
+<p>Ищем в главном меню Dash &quot;Программы и обновления&quot;, либо идем в Параметры системы -  Программы и обновления.
+На вкладке &quot;Другое ПО&quot; ставим галку &quot;Партнеры Canonical&quot;
+А теперь непосредственно ставим skype:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get update
+sudo apt-get install skype <span class="o">&amp;&amp;</span> sudo apt-get -f install
+</code></pre></div>
+<h2>А если зачется открыть IntelliJ IDEA</h2>
 
-<ul>
-  <li>Complete Jekyll setup included (layouts, config, <a href="/404.html">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-  <li>Mobile friendly design and development</li>
-  <li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-  <li>Support for a wide gamut of HTML elements</li>
-  <li>Related posts (time-based, because Jekyll) below each post</li>
-  <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
+<h3>Java</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+</code></pre></div>
+<h5>Для java 7:</h5>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java7-installer
+</code></pre></div>
+<h5>Для java 8:</h5>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java8-installer
+</code></pre></div>
+<p>Чтобы иметь несколько версий java в системе, можно выбирать используемую по умолчанию:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo update-java-alternatives -s java-7-oracle
+</code></pre></div>
+<p>Для других версий аналогично, просто меняем цифру версии.</p>
 
-<p>Additional features are available in individual themes.</p>
+<h3>Postgresql</h3>
 
-<h3 id="browser-support">Browser support</h3>
+<p>Установка;</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-add-repository ppa:pitti/postgresql
+sudo apt-get update
+apt-get install postgresql-9.4
+</code></pre></div>
+<p>Подключаемся к серверу postgresql и добавляем роль:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">postgres</span><span class="o">=</span><span class="c"># CREATE DATABASE test_database;</span>
+<span class="nv">postgres</span><span class="o">=</span><span class="c"># CREATE USER postgres WITH password &#39;1&#39;;</span>
+</code></pre></div>
+<h3>Maven, git, gradle</h3>
 
-<p>Poole and its themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
+<h2>Написать статью в блог a.k.a. dependency for Jekyll</h2>
 
-<h3 id="download">Download</h3>
+<p>Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
+как указано в зависимостях на <a href="https://pages.github.com/versions/">GitHub Pages</a>.
+Правда потом выяснится, что что работы jekyll нужна среда выполнения javascript, поэтому
+предварительно поставим еще NodeJS и npm.</p>
 
-<p>Poole is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/poole">GitHub repository</a> for downloads, bug reports, and features requests.</p>
+<h3>NodeJS</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install nodejs
+sudo apt-get install npm
+</code></pre></div>
+<h3>Ruby</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
-<p>Thanks!</p>
+<span class="nb">cd</span> /tmp
+wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.1.tar.gz
 
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2014/01/01/example-content/">
-        Example content
-      </a>
-    </h1>
-
-    <time datetime="2014-01-01T00:00:00+04:00" class="post-date">01 Jan 2014</time>
-
-    <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
-
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<h2 id="inline-html-elements">Inline HTML elements</h2>
-
-<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-
-<ul>
-  <li><strong>To bold text</strong>, use <code>&lt;strong&gt;</code>.</li>
-  <li><em>To italicize text</em>, use <code>&lt;em&gt;</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full phrase.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code>&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use <code>&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code>&lt;sub&gt;</code>.</li>
-</ul>
-
-<p>Most of these elements are styled by browsers with few modifications on our part.</p>
-
-<h2 id="heading">Heading</h2>
-
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-<h3 id="code">Code</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
-
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
-
-<span class="c1">// Call the function</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span></code></pre></div>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-
-<h3 id="gists-via-github-pages">Gists via GitHub Pages</h3>
-
-<p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"> </script>
-
-<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
-
-<h3 id="lists">Lists</h3>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-  <li>Donec id elit non mi porta gravida at eget metus.</li>
-  <li>Nulla vitae elit libero, a pharetra augue.</li>
-</ul>
-
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-
-<ol>
-  <li>Vestibulum id ligula porta felis euismod semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-</ol>
-
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
-
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<h3 id="images">Images</h3>
-
-<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
-
-<p><img src="http://placehold.it/800x400" alt="placeholder" title="Large example image" />
-<img src="http://placehold.it/400x200" alt="placeholder" title="Medium example image" />
-<img src="http://placehold.it/200x200" alt="placeholder" title="Small example image" /></p>
-
-<h3 id="tables">Tables</h3>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<hr />
-
-<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2013/12/31/whats-jekyll/">
-        What's Jekyll?
-      </a>
-    </h1>
-
-    <time datetime="2013-12-31T00:00:00+04:00" class="post-date">31 Dec 2013</time>
-
-    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/jekyll/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>It’s an immensely useful tool. Find out more by <a href="https://github.com/jekyll/jekyll">visiting the project on GitHub</a>.</p>
-
+tar -xzvf ruby-2.2.1.tar.gz
+<span class="nb">cd </span>ruby-2.2.1/
+./configure --prefix<span class="o">=</span>/usr/local
+make
+make install
+ruby -v
+</code></pre></div>
+<h3>Менеджер пакетов Ruby</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
+</code></pre></div>
   </article>
   
 </div>
@@ -284,7 +169,7 @@
 
       <footer class="footer">
         <small style="padding-bottom: 15px">
-          &copy; <time datetime="2015-04-12T12:19:25+03:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-04-12T14:58:26+03:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
