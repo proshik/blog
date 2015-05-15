@@ -93,7 +93,7 @@ sudo update-java-alternatives -s java-7-oracle
 ```bash
 sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
-apt-get install postgresql-9.4
+sudo apt-get install postgresql-9.4
 ```
 
 Подключаемся к серверу postgresql и добавляем роль:
@@ -119,7 +119,7 @@ sudo apt-get install geany
 ## Написать статью в блог a.k.a. dependency for Jekyll
 Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на [GitHub Pages](https://pages.github.com/versions/).
-Правда потом выяснится, что что работы jekyll нужна среда выполнения javascript, поэтому
+Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.
 
 ### NodeJS ###
@@ -144,6 +144,18 @@ ruby -v
 ### Менеджер пакетов Ruby ###
 ```bash
 gem install bundler
+```
+
+### Окружение Jekyll ###
+За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить
+
+```bash 
+gem install github-pages
+```
+И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой
+
+```bash
+jekyll serve
 ```
 
 *Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 

@@ -97,6 +97,13 @@ sudo apt-get install skype <span class="o">&amp;&amp;</span> sudo apt-get -f ins
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> wget -O - <span class="s2">&quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot;</span> <span class="p">|</span> tar xzf -
 ~/.dropbox-dist/dropboxd
 </code></pre></div>
+<h3>SMPlayer</h3>
+
+<p>Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:rvm/smplayer
+sudo apt-get update
+sudo apt-get install smplayer smplayer-themes smplayer-translations
+</code></pre></div>
 <h2>Если зачется открыть IntelliJ IDEA</h2>
 
 <h3>Java</h3>
@@ -120,7 +127,7 @@ sudo apt-get update
 Установка;</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
-apt-get install postgresql-9.4
+sudo apt-get install postgresql-9.4
 </code></pre></div>
 <p>Подключаемся к серверу postgresql и добавляем роль:</p>
 <div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">test_database</span><span class="p">;</span>
@@ -140,7 +147,7 @@ sudo apt-get install geany
 
 <p>Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на <a href="https://pages.github.com/versions/">GitHub Pages</a>.
-Правда потом выяснится, что что работы jekyll нужна среда выполнения javascript, поэтому
+Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.</p>
 
 <h3>NodeJS</h3>
@@ -162,6 +169,14 @@ ruby -v
 <h3>Менеджер пакетов Ruby</h3>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
 </code></pre></div>
+<h3>Окружение Jekyll</h3>
+
+<p>За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install github-pages
+</code></pre></div>
+<p>И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">jekyll serve
+</code></pre></div>
 <p><em>Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум, вспомню и допишу!</em></p>
 
@@ -182,7 +197,7 @@ ruby -v
 
       <footer class="footer">
         <small style="padding-bottom: 15px">
-          &copy; <time datetime="2015-04-12T16:17:01+03:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-05-15T23:47:57+03:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

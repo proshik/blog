@@ -4,7 +4,7 @@
  <title>Записки начинающего программиста</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2015-04-12T16:17:01+03:00</updated>
+ <updated>2015-05-15T23:47:57+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
    <name>Proxor Krylov</name>
@@ -56,6 +56,13 @@ sudo apt-get install skype &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget -O - &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://www.dropbox.com/download?plat=lnx.x86_64&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; tar xzf -
 ~/.dropbox-dist/dropboxd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;SMPlayer&lt;/h3&gt;
+
+&lt;p&gt;Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:rvm/smplayer
+sudo apt-get update
+sudo apt-get install smplayer smplayer-themes smplayer-translations
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Если зачется открыть IntelliJ IDEA&lt;/h2&gt;
 
 &lt;h3&gt;Java&lt;/h3&gt;
@@ -79,7 +86,7 @@ sudo apt-get update
 Установка;&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
-apt-get install postgresql-9.4
+sudo apt-get install postgresql-9.4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Подключаемся к серверу postgresql и добавляем роль:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_database&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -99,7 +106,7 @@ sudo apt-get install geany
 
 &lt;p&gt;Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;GitHub Pages&lt;/a&gt;.
-Правда потом выяснится, что что работы jekyll нужна среда выполнения javascript, поэтому
+Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.&lt;/p&gt;
 
 &lt;h3&gt;NodeJS&lt;/h3&gt;
@@ -120,6 +127,14 @@ ruby -v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Менеджер пакетов Ruby&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Окружение Jekyll&lt;/h3&gt;
+
+&lt;p&gt;За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install github-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум, вспомню и допишу!&lt;/em&gt;&lt;/p&gt;
