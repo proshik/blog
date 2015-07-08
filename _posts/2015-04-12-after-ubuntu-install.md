@@ -62,6 +62,21 @@ sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
 ```
 
+### 1Password ###
+Понадобится еще Wine
+
+```bash
+sudo apt-get install wine
+```
+
+и сам 1Password, качаем [здесь](https://agilebits.com/onepassword/windows).
+
+Затем устанавливаем 1Password
+
+```bash
+wine 1Password-4.1.0.530.exe
+```
+
 ## Если зачется открыть IntelliJ IDEA ##
 ### Java ###
 ```bash
@@ -159,4 +174,4 @@ jekyll serve
 ```
 
 *Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
-но если что придет на ум, вспомню и допишу!*
+но если что придет на ум - допишу!*
