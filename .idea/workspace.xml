@@ -70,8 +70,8 @@
       <file leaf-file-name="atom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_site/atom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62222224">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.31111112">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -523,7 +523,7 @@
       <workItem from="1436389061141" duration="6446000" />
       <workItem from="1436727925497" duration="2633000" />
       <workItem from="1437827920347" duration="5471000" />
-      <workItem from="1437913787020" duration="3116000" />
+      <workItem from="1437913787020" duration="3265000" />
     </task>
     <task id="LOCAL-00001" summary="Begin with pope template">
       <created>1428830530917</created>
@@ -567,11 +567,17 @@
       <option name="project" value="LOCAL" />
       <updated>1437916874021</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2016-26-07 - update file *linux-commands*">
+      <created>1437916989172</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1437916989172</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41379000" />
+    <option name="totallyTimeSpent" value="41528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,7 +590,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1001,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/atom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62222224">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.31111112">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
