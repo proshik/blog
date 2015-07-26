@@ -4,13 +4,103 @@
  <title>Записки начинающего программиста</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2015-05-15T23:47:57+03:00</updated>
+ <updated>2015-07-26T16:21:02+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
    <name>Proxor Krylov</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Команды Linux</title>
+   <link href="http://proshik.github.io//2015/07/08/linux-commands/"/>
+   <updated>2015-07-08T00:00:00+03:00</updated>
+   <id>http://proshik.github.io/2015/07/08/linux-commands</id>
+   <content type="html">&lt;p&gt;Освежить знание команд linux&lt;/p&gt;
+
+&lt;h2&gt;Основные команды&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ls -lash /home              &lt;span class=&quot;c&quot;&gt;# Просмотр содержимого католога&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;                         &lt;span class=&quot;c&quot;&gt;# Путь к текущему каталогу&lt;/span&gt;
+su -                        &lt;span class=&quot;c&quot;&gt;# Стать root + его переменные окружения &lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home                    &lt;span class=&quot;c&quot;&gt;# Переход в другой каталог&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;touch index.htm                    &lt;span class=&quot;c&quot;&gt;# Создать новый файл&lt;/span&gt;
+mkdir -p /home/name/www/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;tools,i&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Создать каталог с подкаталогами&lt;/span&gt;
+cp www/index.htm .                 &lt;span class=&quot;c&quot;&gt;# Копируем файл в текущий каталог&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mv -v /home/name_bak /home/name    &lt;span class=&quot;c&quot;&gt;# Перемещение/переименование &lt;/span&gt;
+                                   &lt;span class=&quot;c&quot;&gt;# файлов и каталогов&lt;/span&gt;
+rm -rf /home/name/www              &lt;span class=&quot;c&quot;&gt;# Удаление каталога со всем &lt;/span&gt;
+                                   &lt;span class=&quot;c&quot;&gt;# содержимым&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;which ls                    &lt;span class=&quot;c&quot;&gt;# Полный путь имени/расположение команды&lt;/span&gt;
+whatis ls                   &lt;span class=&quot;c&quot;&gt;# Очень короткая справка о команде&lt;/span&gt;
+whereis grep                &lt;span class=&quot;c&quot;&gt;# Путь к исполняемым файлам, &lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# исходным файлам и справочному рук-ву&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;date &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;-u&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;--utc&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;--universal&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;MMDDhhmm&lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt;CC&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;YY&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;.ss&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;
+date &lt;span class=&quot;m&quot;&gt;031713402011&lt;/span&gt;                  &lt;span class=&quot;c&quot;&gt;# Устанавливаем дату: &lt;/span&gt;
+                                   &lt;span class=&quot;c&quot;&gt;# Чтв Мар 17 13:40:00 MSK 2011&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;ls -lash /root                &lt;span class=&quot;c&quot;&gt;# Время выполнение команды&lt;/span&gt;
+cal -3                             &lt;span class=&quot;c&quot;&gt;# Календарь на 3 месяца&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;                   &lt;span class=&quot;c&quot;&gt;# Список переменных окружения&lt;/span&gt;
+
+openssl md5 index.htm.bak          &lt;span class=&quot;c&quot;&gt;# Делаем md5 hash файла&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Просмотр содержимого файлов&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat bash.txt                &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла(файлов)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;less -N /etc/named.conf     &lt;span class=&quot;c&quot;&gt;# постраничный вывод текста с нумерацией&lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# строк (с прокруткой файла)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tail /var/log/mail/info     &lt;span class=&quot;c&quot;&gt;# команда выведет (по умолчанию) &lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# последние 10 строк из файла&lt;/span&gt;
+tail -n2 /var/log/mail/info &lt;span class=&quot;c&quot;&gt;# вывод последних n строк файла&lt;/span&gt;
+tail -f /var/log/messages   &lt;span class=&quot;c&quot;&gt;# слежение за файлом&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;head /var/log/main/info     &lt;span class=&quot;c&quot;&gt;# вывод первых строк файла&lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# далее как в &amp;quot;tail&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;more /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла на &lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# экран отдельными страницами&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nano /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# просмотр и редактирование файла&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Остальные команды&lt;/h2&gt;
+
+&lt;h3&gt;Установка и настройка SSH&lt;/h3&gt;
+
+&lt;p&gt;Устанавливаем OpenSSH из терминала:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Операции работы с файлами и фильтрация&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;grep&lt;/strong&gt; - &lt;em&gt;&amp;quot;General Regular Expression Parser”&lt;/em&gt; - синтаксический 
+анализатор общих регулярных выражений.
+Формат команды:
+grep [опции] &amp;lt;шаблон&amp;gt; [один или более файлов]&lt;/p&gt;
+
+&lt;p&gt;Шаблон - это регулярное выражение, хотя в большинстве случаев он состоит просто из одного слова
+Опции:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v&lt;/strong&gt; - обратный поиск. Вывод строк, которые не соответствуют шаблону;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;n&lt;/strong&gt; - вывод номера строки для каждой из найденных строк;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; - сообщает grep&amp;#39;у, что шаблон должен совпадать со всем словом.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Команда grep может быть использована в канале. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep &lt;span class=&quot;s1&quot;&gt;&amp;#39;^a&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;words.txt&amp;#39;&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# ывести из файла «words.txt» все&lt;/span&gt;
+                        &lt;span class=&quot;c&quot;&gt;# строки, начинающиеся с буквы «a»&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep -f template.txt data.txt   &lt;span class=&quot;c&quot;&gt;# сравнить два файла и вывести&lt;/span&gt;
+                                &lt;span class=&quot;c&quot;&gt;# совпадающие строки.&lt;/span&gt;
+grep -f -v template.txt data.txt    &lt;span class=&quot;c&quot;&gt;# сравнить два файла и &lt;/span&gt;
+                                    &lt;span class=&quot;c&quot;&gt;# вывести несовпадающие строки.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Фильтр процессов&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ps -aef &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;s1&quot;&gt;&amp;#39;[b]ash&amp;#39;&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# Фильтр процессов без&lt;/span&gt;
+ps -aef &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep -v &lt;span class=&quot;s1&quot;&gt;&amp;#39;grep&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep bash    &lt;span class=&quot;c&quot;&gt;# вывода самой команды grep,&lt;/span&gt;
+                                        &lt;span class=&quot;c&quot;&gt;# например, если ищем bash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;cURL - утилита для скачивания и загрузки файлов&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;curl -O http://linux-notes.org/test_file.zip    &lt;span class=&quot;c&quot;&gt;# скачать и сохранить&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Пока все!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>После установки Ubuntu</title>
@@ -62,6 +152,16 @@ sudo apt-get install skype &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;1Password&lt;/h3&gt;
+
+&lt;p&gt;Понадобится еще Wine&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install wine
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;и сам 1Password, качаем &lt;a href=&quot;https://agilebits.com/onepassword/windows&quot;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Затем устанавливаем 1Password&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wine 1Password-4.1.0.530.exe
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Если зачется открыть IntelliJ IDEA&lt;/h2&gt;
 
@@ -137,7 +237,7 @@ ruby -v
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
-но если что придет на ум, вспомню и допишу!&lt;/em&gt;&lt;/p&gt;
+но если что придет на ум - допишу!&lt;/em&gt;&lt;/p&gt;
 </content>
  </entry>
  
