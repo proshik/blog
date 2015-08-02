@@ -101,13 +101,17 @@ tail -f /var/log/messages   <span class="c"># слежение за файлом
 </code></pre></div>
 <h2>Остальные команды</h2>
 
-<h3>Установка и настройка SSH</h3>
+<h3>Установка клиента ssh</h3>
 
 <p>Устанавливаем OpenSSH из терминала:</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install ssh
 </code></pre></div>
 <h3>Операции работы с файлами и фильтрация</h3>
 
+<p><strong>cut</strong> - выводит выбранные части входных строк.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">cut -d: -f7 &lt; /etc/passwd <span class="p">|</span> sort -u     <span class="c"># из файла /etc/password</span>
+                                        <span class="c"># пути к оболочке each users</span>
+</code></pre></div>
 <p><strong>grep</strong> - <em>&quot;General Regular Expression Parser”</em> - синтаксический 
 анализатор общих регулярных выражений.
 Формат команды:
@@ -301,7 +305,7 @@ ruby -v
 
       <footer class="footer">
         <small style="padding-bottom: 15px">
-          &copy; <time datetime="2015-07-26T16:25:23+03:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-08-02T18:18:21+03:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

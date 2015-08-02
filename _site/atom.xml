@@ -4,7 +4,7 @@
  <title>Записки начинающего программиста</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2015-07-26T16:25:23+03:00</updated>
+ <updated>2015-08-02T18:18:21+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
    <name>Proxor Krylov</name>
@@ -60,13 +60,17 @@ tail -f /var/log/messages   &lt;span class=&quot;c&quot;&gt;# слежение �
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Остальные команды&lt;/h2&gt;
 
-&lt;h3&gt;Установка и настройка SSH&lt;/h3&gt;
+&lt;h3&gt;Установка клиента ssh&lt;/h3&gt;
 
 &lt;p&gt;Устанавливаем OpenSSH из терминала:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install ssh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Операции работы с файлами и фильтрация&lt;/h3&gt;
 
+&lt;p&gt;&lt;strong&gt;cut&lt;/strong&gt; - выводит выбранные части входных строк.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cut -d: -f7 &amp;lt; /etc/passwd &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sort -u     &lt;span class=&quot;c&quot;&gt;# из файла /etc/password&lt;/span&gt;
+                                        &lt;span class=&quot;c&quot;&gt;# пути к оболочке each users&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;grep&lt;/strong&gt; - &lt;em&gt;&amp;quot;General Regular Expression Parser”&lt;/em&gt; - синтаксический 
 анализатор общих регулярных выражений.
 Формат команды:
