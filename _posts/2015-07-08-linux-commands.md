@@ -4,6 +4,7 @@ title: Команды Linux
 excerpt_separator: <!--more-->
 ---
 
+![]({{ site.baseurl }}assets/2015-07-08-linux-commands/linux_commands.png)
 
 ### Основные команды
 
@@ -14,13 +15,13 @@ su -                        # Стать root + его переменные ок
 cd /home                    # Переход в другой каталог
 ```
 
+<!--more-->
+
 ```bash
 touch index.htm                    # Создать новый файл
 mkdir -p /home/name/www/{tools,i}  # Создать каталог с подкаталогами
 cp www/index.htm .                 # Копируем файл в текущий каталог
 ```
-
-<!--more-->
 
 ```bash
 mv -v /home/name_bak /home/name    # Перемещение/переименование 
