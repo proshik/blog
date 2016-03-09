@@ -3,7 +3,7 @@ layout: post
 title: После установки Ubuntu
 ---
 
-## Вступление
+### Вступление
 
 В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -15,8 +15,8 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.
 
 
-## В первую очередь
-### Google Chrome ###
+### В первую очередь
+#### Google Chrome ####
 ```bash
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
@@ -24,14 +24,14 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 ```
 
-### Ubuntu Tweak ###
+#### Ubuntu Tweak ####
 ```bash
 sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
 ```
 
-### Skype ###
+#### Skype ####
 Добавляем репозиторий "партнеров Canonical"
 
 ```bash
@@ -47,13 +47,13 @@ sudo apt-get update
 sudo apt-get install skype && sudo apt-get -f install
 ```
 
-### Dropbox ###
+#### Dropbox ####
 
 ```bash
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
 ```
-### SMPlayer ###
+#### SMPlayer ####
 Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм
 
 ```bash
@@ -62,7 +62,7 @@ sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
 ```
 
-### 1Password ###
+#### 1Password ####
 Понадобится еще Wine
 
 ```bash
@@ -77,8 +77,8 @@ sudo apt-get install wine
 wine 1Password-4.1.0.530.exe
 ```
 
-## Если зачется открыть IntelliJ IDEA ##
-### Java ###
+### Если зачется открыть IntelliJ IDEA ###
+#### Java ####
 ```bash
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
@@ -101,7 +101,7 @@ sudo update-java-alternatives -s java-7-oracle
 
 Для других версий аналогично, просто меняем цифру версии.
 
-### Postgresql ###
+#### Postgresql ####
 В своих проектах я использую чаще всего именно эту СУБД.
 Установка;
 
@@ -118,7 +118,7 @@ postgres=# CREATE DATABASE test_database;
 postgres=# CREATE USER postgres WITH password '1';
 ```
 
-### Git, maven, gradle, geany ###
+#### Git, maven, gradle, geany ####
 ```bash
 sudo apt-get install git
 sudo apt-get install maven
@@ -131,18 +131,18 @@ sudo apt-get install geany
 ```
 
 
-## Написать статью в блог a.k.a. dependency for Jekyll
+### Написать статью в блог a.k.a. dependency for Jekyll
 Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на [GitHub Pages](https://pages.github.com/versions/).
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.
 
-### NodeJS ###
+#### NodeJS ####
 ```
 sudo apt-get install nodejs
 sudo apt-get install npm
 ```
-### Ruby ###
+#### Ruby ####
 ```bash
 sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
@@ -156,12 +156,12 @@ make install
 ruby -v
 ```
 
-### Менеджер пакетов Ruby ###
+#### Менеджер пакетов Ruby ####
 ```bash
 gem install bundler
 ```
 
-### Окружение Jekyll ###
+#### Окружение Jekyll ####
 За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить
 
 ```bash 

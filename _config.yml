@@ -1,10 +1,12 @@
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+
+#For jekyll 2, becuse was commented
+#relative_permalinks: true
 
 # Setup
-title:            Записки начинающего программиста
-tagline:          О том, что все нормальные люди запоминают, а я почему-то не могу
+title:            Proshik`s blog
+tagline:          Development & DevOps
 url:              http://proshik.github.io
 paginate:         2
 baseurl:          /
@@ -12,7 +14,7 @@ baseurl:          /
 markdown: redcarpet
 
 author:
-  name:           Proxor Krylov
+  name:           Prokhor Krylov
 
 # Custom vars
 version:          1.0.0
@@ -21,7 +23,10 @@ github:
 
 #Links
 pages_list:
-  Архив: '/archive'
-  О блоге: '/about'
+  Archive: '/archive'
+  About blog: '/about'
 
 markdown: redcarpet
+
+gems :
+  - jekyll-paginate

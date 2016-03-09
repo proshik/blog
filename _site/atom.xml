@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Записки начинающего программиста</title>
+ <title>Proshik`s blog</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2015-08-02T18:18:21+03:00</updated>
+ <updated>2016-03-09T03:30:16+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
-   <name>Proxor Krylov</name>
+   <name>Prokhor Krylov</name>
    <email></email>
  </author>
 
@@ -17,9 +17,7 @@
    <link href="http://proshik.github.io//2015/07/08/linux-commands/"/>
    <updated>2015-07-08T00:00:00+03:00</updated>
    <id>http://proshik.github.io/2015/07/08/linux-commands</id>
-   <content type="html">&lt;p&gt;Освежить знание команд linux&lt;/p&gt;
-
-&lt;h2&gt;Основные команды&lt;/h2&gt;
+   <content type="html">&lt;h3&gt;Основные команды&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ls -lash /home              &lt;span class=&quot;c&quot;&gt;# Просмотр содержимого католога&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;                         &lt;span class=&quot;c&quot;&gt;# Путь к текущему каталогу&lt;/span&gt;
 su -                        &lt;span class=&quot;c&quot;&gt;# Стать root + его переменные окружения &lt;/span&gt;
@@ -35,16 +33,16 @@ rm -rf /home/name/www              &lt;span class=&quot;c&quot;&gt;# Удале�
 whatis ls                   &lt;span class=&quot;c&quot;&gt;# Очень короткая справка о команде&lt;/span&gt;
 whereis grep                &lt;span class=&quot;c&quot;&gt;# Путь к исполняемым файлам, &lt;/span&gt;
                             &lt;span class=&quot;c&quot;&gt;# исходным файлам и справочному рук-ву&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;date &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;-u&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;--utc&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;--universal&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;MMDDhhmm&lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt;CC&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;YY&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;.ss&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;
-date &lt;span class=&quot;m&quot;&gt;031713402011&lt;/span&gt;                  &lt;span class=&quot;c&quot;&gt;# Устанавливаем дату: &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;date &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;-u|--utc|--universal] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;MMDDhhmm[[CC]YY][.ss]]
+date 031713402011                  &lt;span class=&quot;c&quot;&gt;# Устанавливаем дату: &lt;/span&gt;
                                    &lt;span class=&quot;c&quot;&gt;# Чтв Мар 17 13:40:00 MSK 2011&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;ls -lash /root                &lt;span class=&quot;c&quot;&gt;# Время выполнение команды&lt;/span&gt;
 cal -3                             &lt;span class=&quot;c&quot;&gt;# Календарь на 3 месяца&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;                   &lt;span class=&quot;c&quot;&gt;# Список переменных окружения&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; | grep &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;                   &lt;span class=&quot;c&quot;&gt;# Список переменных окружения&lt;/span&gt;
 
 openssl md5 index.htm.bak          &lt;span class=&quot;c&quot;&gt;# Делаем md5 hash файла&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Просмотр содержимого файлов&lt;/h2&gt;
+&lt;h3&gt;Просмотр содержимого файлов&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat bash.txt                &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла(файлов)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;less -N /etc/named.conf     &lt;span class=&quot;c&quot;&gt;# постраничный вывод текста с нумерацией&lt;/span&gt;
                             &lt;span class=&quot;c&quot;&gt;# строк (с прокруткой файла)&lt;/span&gt;
@@ -53,22 +51,22 @@ openssl md5 index.htm.bak          &lt;span class=&quot;c&quot;&gt;# Делае�
 tail -n2 /var/log/mail/info &lt;span class=&quot;c&quot;&gt;# вывод последних n строк файла&lt;/span&gt;
 tail -f /var/log/messages   &lt;span class=&quot;c&quot;&gt;# слежение за файлом&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;head /var/log/main/info     &lt;span class=&quot;c&quot;&gt;# вывод первых строк файла&lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# далее как в &amp;quot;tail&amp;quot;&lt;/span&gt;
+                            &lt;span class=&quot;c&quot;&gt;# далее как в &quot;tail&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;more /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла на &lt;/span&gt;
                             &lt;span class=&quot;c&quot;&gt;# экран отдельными страницами&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nano /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# просмотр и редактирование файла&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Остальные команды&lt;/h2&gt;
+&lt;h3&gt;Остальные команды&lt;/h3&gt;
 
-&lt;h3&gt;Установка клиента ssh&lt;/h3&gt;
+&lt;h4&gt;Установка клиента ssh&lt;/h4&gt;
 
 &lt;p&gt;Устанавливаем OpenSSH из терминала:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install ssh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Операции работы с файлами и фильтрация&lt;/h3&gt;
+&lt;h4&gt;Операции работы с файлами и фильтрация&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;cut&lt;/strong&gt; - выводит выбранные части входных строк.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cut -d: -f7 &amp;lt; /etc/passwd &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sort -u     &lt;span class=&quot;c&quot;&gt;# из файла /etc/password&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cut -d: -f7 &amp;lt; /etc/passwd | sort -u     &lt;span class=&quot;c&quot;&gt;# из файла /etc/password&lt;/span&gt;
                                         &lt;span class=&quot;c&quot;&gt;# пути к оболочке each users&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;grep&lt;/strong&gt; - &lt;em&gt;&amp;quot;General Regular Expression Parser”&lt;/em&gt; - синтаксический 
@@ -87,19 +85,19 @@ grep [опции] &amp;lt;шаблон&amp;gt; [один или более фа�
 &lt;/ul&gt;
 
 &lt;p&gt;Команда grep может быть использована в канале. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep &lt;span class=&quot;s1&quot;&gt;&amp;#39;^a&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;words.txt&amp;#39;&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# ывести из файла «words.txt» все&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep &lt;span class=&quot;s1&quot;&gt;&#39;^a&#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;words.txt&#39;&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# ывести из файла «words.txt» все&lt;/span&gt;
                         &lt;span class=&quot;c&quot;&gt;# строки, начинающиеся с буквы «a»&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep -f template.txt data.txt   &lt;span class=&quot;c&quot;&gt;# сравнить два файла и вывести&lt;/span&gt;
                                 &lt;span class=&quot;c&quot;&gt;# совпадающие строки.&lt;/span&gt;
 grep -f -v template.txt data.txt    &lt;span class=&quot;c&quot;&gt;# сравнить два файла и &lt;/span&gt;
                                     &lt;span class=&quot;c&quot;&gt;# вывести несовпадающие строки.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Фильтр процессов&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ps -aef &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep &lt;span class=&quot;s1&quot;&gt;&amp;#39;[b]ash&amp;#39;&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# Фильтр процессов без&lt;/span&gt;
-ps -aef &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep -v &lt;span class=&quot;s1&quot;&gt;&amp;#39;grep&amp;#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep bash    &lt;span class=&quot;c&quot;&gt;# вывода самой команды grep,&lt;/span&gt;
+&lt;h4&gt;Фильтр процессов&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ps -aef | grep &lt;span class=&quot;s1&quot;&gt;&#39;[b]ash&#39;&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# Фильтр процессов без&lt;/span&gt;
+ps -aef | grep -v &lt;span class=&quot;s1&quot;&gt;&#39;grep&#39;&lt;/span&gt; | grep bash    &lt;span class=&quot;c&quot;&gt;# вывода самой команды grep,&lt;/span&gt;
                                         &lt;span class=&quot;c&quot;&gt;# например, если ищем bash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;cURL - утилита для скачивания и загрузки файлов&lt;/h3&gt;
+&lt;h4&gt;cURL - утилита для скачивания и загрузки файлов&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;curl -O http://linux-notes.org/test_file.zip    &lt;span class=&quot;c&quot;&gt;# скачать и сохранить&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;Пока все!&lt;/em&gt;&lt;/p&gt;
@@ -111,7 +109,7 @@ ps -aef &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep -v &lt;span class=&q
    <link href="http://proshik.github.io//2015/04/12/after-ubuntu-install/"/>
    <updated>2015-04-12T00:00:00+03:00</updated>
    <id>http://proshik.github.io/2015/04/12/after-ubuntu-install</id>
-   <content type="html">&lt;h2&gt;Вступление&lt;/h2&gt;
+   <content type="html">&lt;h3&gt;Вступление&lt;/h3&gt;
 
 &lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -122,23 +120,23 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 
 &lt;p&gt;Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
 
-&lt;h2&gt;В первую очередь&lt;/h2&gt;
+&lt;h3&gt;В первую очередь&lt;/h3&gt;
 
-&lt;h3&gt;Google Chrome&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sudo apt-key add -
-sudo sh -c &lt;span class=&quot;s1&quot;&gt;&amp;#39;echo &amp;quot;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&amp;#39;&lt;/span&gt;
+&lt;h4&gt;Google Chrome&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c &lt;span class=&quot;s1&quot;&gt;&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/span&gt;
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Ubuntu Tweak&lt;/h3&gt;
+&lt;h4&gt;Ubuntu Tweak&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Skype&lt;/h3&gt;
+&lt;h4&gt;Skype&lt;/h4&gt;
 
 &lt;p&gt;Добавляем репозиторий &amp;quot;партнеров Canonical&amp;quot;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository &lt;span class=&quot;s2&quot;&gt;&amp;quot;deb http://archive.canonical.com/ $(lsb_release -sc) partner&amp;quot;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository &lt;span class=&quot;s2&quot;&gt;&quot;deb http://archive.canonical.com/ &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;lsb_release -sc&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; partner&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ищем в главном меню Dash &amp;quot;Программы и обновления&amp;quot;, либо идем в Параметры системы -  Программы и обновления.
 На вкладке &amp;quot;Другое ПО&amp;quot; ставим галку &amp;quot;Партнеры Canonical&amp;quot;
@@ -146,18 +144,18 @@ sudo apt-get install ubuntu-tweak
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get update
 sudo apt-get install skype &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get -f install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Dropbox&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget -O - &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://www.dropbox.com/download?plat=lnx.x86_64&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; tar xzf -
+&lt;h4&gt;Dropbox&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget -O - &lt;span class=&quot;s2&quot;&gt;&quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot;&lt;/span&gt; | tar xzf -
 ~/.dropbox-dist/dropboxd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;SMPlayer&lt;/h3&gt;
+&lt;h4&gt;SMPlayer&lt;/h4&gt;
 
 &lt;p&gt;Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;1Password&lt;/h3&gt;
+&lt;h4&gt;1Password&lt;/h4&gt;
 
 &lt;p&gt;Понадобится еще Wine&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install wine
@@ -167,9 +165,9 @@ sudo apt-get install smplayer smplayer-themes smplayer-translations
 &lt;p&gt;Затем устанавливаем 1Password&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wine 1Password-4.1.0.530.exe
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Если зачется открыть IntelliJ IDEA&lt;/h2&gt;
+&lt;h3&gt;Если зачется открыть IntelliJ IDEA&lt;/h3&gt;
 
-&lt;h3&gt;Java&lt;/h3&gt;
+&lt;h4&gt;Java&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -184,7 +182,7 @@ sudo apt-get update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Для других версий аналогично, просто меняем цифру версии.&lt;/p&gt;
 
-&lt;h3&gt;Postgresql&lt;/h3&gt;
+&lt;h4&gt;Postgresql&lt;/h4&gt;
 
 &lt;p&gt;В своих проектах я использую чаще всего именно эту СУБД.
 Установка;&lt;/p&gt;
@@ -194,9 +192,9 @@ sudo apt-get install postgresql-9.4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Подключаемся к серверу postgresql и добавляем роль:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_database&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;USER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;USER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Git, maven, gradle, geany&lt;/h3&gt;
+&lt;h4&gt;Git, maven, gradle, geany&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install git
 sudo apt-get install maven
 
@@ -206,18 +204,18 @@ sudo apt-get update
 sudo apt-get install gradle
 sudo apt-get install geany
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;Написать статью в блог a.k.a. dependency for Jekyll&lt;/h2&gt;
+&lt;h3&gt;Написать статью в блог a.k.a. dependency for Jekyll&lt;/h3&gt;
 
 &lt;p&gt;Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;GitHub Pages&lt;/a&gt;.
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.&lt;/p&gt;
 
-&lt;h3&gt;NodeJS&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;sudo apt-get install nodejs
+&lt;h4&gt;NodeJS&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;sudo apt-get install nodejs
 sudo apt-get install npm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Ruby&lt;/h3&gt;
+&lt;h4&gt;Ruby&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
@@ -229,10 +227,10 @@ make
 make install
 ruby -v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Менеджер пакетов Ruby&lt;/h3&gt;
+&lt;h4&gt;Менеджер пакетов Ruby&lt;/h4&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install bundler
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Окружение Jekyll&lt;/h3&gt;
+&lt;h4&gt;Окружение Jekyll&lt;/h4&gt;
 
 &lt;p&gt;За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install github-pages

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
   <meta charset="UTF-8">
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
@@ -10,7 +10,7 @@
 
   <title>
     
-    После установки Ubuntu &middot; Записки начинающего программиста
+    После установки Ubuntu &middot; Proshik`s blog
     
   </title>
 
@@ -23,34 +23,39 @@
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Записки начинающего программиста" href="/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Proshik`s blog" href="/atom.xml">
 </head>
 
 
-  <body>
+<body>
 
-    <div class="container content">
-      <header class="masthead">
+<div class="container content">
+    <header class="masthead">
         <h3 class="masthead-title">
-          <a href="/" title="Home">Записки начинающего программиста</a>
-
-          
-          &nbsp;&nbsp;&nbsp;
-          <small><a href="/archive">Архив</a></small>
-          
-          &nbsp;&nbsp;&nbsp;
-          <small><a href="/about">О блоге</a></small>
-          
-
-          <p><small>О том, что все нормальные люди запоминают, а я почему-то не могу</small></p>
+            <a href="/" title="Home">Proshik`s blog</a>
+            
+            &nbsp;&nbsp;&nbsp;
+            <small><a href="/archive">Archive</a></small>
+            
+            &nbsp;&nbsp;&nbsp;
+            <small><a href="/about">About blog</a></small>
+            
         </h3>
-      </header>
+        <p class="masthead-tagline">
+            <small>Development & DevOps</small>
+        </p>
+        <hr style="margin-top: 0;">
+    </header>
 
-      <main>
+
+    <main>
         <article class="post">
-  <h1 class="post-title">После установки Ubuntu</h1>
-  <time datetime="2015-04-12T00:00:00+03:00" class="page-date">12 Apr 2015</time>
-  <h2>Вступление</h2>
+    <h2 class="post-title">
+        После установки Ubuntu
+    </h2>
+
+    <time datetime="2015-04-12T00:00:00+03:00" class="page-date">12 Apr 2015</time>
+    <h3>Вступление</h3>
 
 <p>В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -61,23 +66,23 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 
 <p>Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.</p>
 
-<h2>В первую очередь</h2>
+<h3>В первую очередь</h3>
 
-<h3>Google Chrome</h3>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub <span class="p">|</span> sudo apt-key add -
-sudo sh -c <span class="s1">&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google-chrome.list&#39;</span>
+<h4>Google Chrome</h4>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c <span class="s1">'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</span>
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 </code></pre></div>
-<h3>Ubuntu Tweak</h3>
+<h4>Ubuntu Tweak</h4>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
 </code></pre></div>
-<h3>Skype</h3>
+<h4>Skype</h4>
 
 <p>Добавляем репозиторий &quot;партнеров Canonical&quot;</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="s2">&quot;deb http://archive.canonical.com/ $(lsb_release -sc) partner&quot;</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="s2">"deb http://archive.canonical.com/ </span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2"> partner"</span>
 </code></pre></div>
 <p>Ищем в главном меню Dash &quot;Программы и обновления&quot;, либо идем в Параметры системы -  Программы и обновления.
 На вкладке &quot;Другое ПО&quot; ставим галку &quot;Партнеры Canonical&quot;
@@ -85,18 +90,18 @@ sudo apt-get install ubuntu-tweak
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get update
 sudo apt-get install skype <span class="o">&amp;&amp;</span> sudo apt-get -f install
 </code></pre></div>
-<h3>Dropbox</h3>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> wget -O - <span class="s2">&quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot;</span> <span class="p">|</span> tar xzf -
+<h4>Dropbox</h4>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> wget -O - <span class="s2">"https://www.dropbox.com/download?plat=lnx.x86_64"</span> | tar xzf -
 ~/.dropbox-dist/dropboxd
 </code></pre></div>
-<h3>SMPlayer</h3>
+<h4>SMPlayer</h4>
 
 <p>Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
 </code></pre></div>
-<h3>1Password</h3>
+<h4>1Password</h4>
 
 <p>Понадобится еще Wine</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install wine
@@ -106,9 +111,9 @@ sudo apt-get install smplayer smplayer-themes smplayer-translations
 <p>Затем устанавливаем 1Password</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">wine 1Password-4.1.0.530.exe
 </code></pre></div>
-<h2>Если зачется открыть IntelliJ IDEA</h2>
+<h3>Если зачется открыть IntelliJ IDEA</h3>
 
-<h3>Java</h3>
+<h4>Java</h4>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 </code></pre></div>
@@ -123,7 +128,7 @@ sudo apt-get update
 </code></pre></div>
 <p>Для других версий аналогично, просто меняем цифру версии.</p>
 
-<h3>Postgresql</h3>
+<h4>Postgresql</h4>
 
 <p>В своих проектах я использую чаще всего именно эту СУБД.
 Установка;</p>
@@ -133,9 +138,9 @@ sudo apt-get install postgresql-9.4
 </code></pre></div>
 <p>Подключаемся к серверу postgresql и добавляем роль:</p>
 <div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">test_database</span><span class="p">;</span>
-<span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="n">postgres</span> <span class="k">WITH</span> <span class="n">password</span> <span class="s1">&#39;1&#39;</span><span class="p">;</span>
+<span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="n">postgres</span> <span class="k">WITH</span> <span class="n">password</span> <span class="s1">'1'</span><span class="p">;</span>
 </code></pre></div>
-<h3>Git, maven, gradle, geany</h3>
+<h4>Git, maven, gradle, geany</h4>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install git
 sudo apt-get install maven
 
@@ -145,18 +150,18 @@ sudo apt-get update
 sudo apt-get install gradle
 sudo apt-get install geany
 </code></pre></div>
-<h2>Написать статью в блог a.k.a. dependency for Jekyll</h2>
+<h3>Написать статью в блог a.k.a. dependency for Jekyll</h3>
 
 <p>Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на <a href="https://pages.github.com/versions/">GitHub Pages</a>.
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.</p>
 
-<h3>NodeJS</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo apt-get install nodejs
+<h4>NodeJS</h4>
+<div class="highlight"><pre><code class="language-" data-lang="">sudo apt-get install nodejs
 sudo apt-get install npm
 </code></pre></div>
-<h3>Ruby</h3>
+<h4>Ruby</h4>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
 <span class="nb">cd</span> /tmp
@@ -168,10 +173,10 @@ make
 make install
 ruby -v
 </code></pre></div>
-<h3>Менеджер пакетов Ruby</h3>
+<h4>Менеджер пакетов Ruby</h4>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
 </code></pre></div>
-<h3>Окружение Jekyll</h3>
+<h4>Окружение Jekyll</h4>
 
 <p>За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install github-pages
@@ -182,32 +187,38 @@ ruby -v
 <p><em>Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум - допишу!</em></p>
 
+
 </article>
 
+
 <aside class="related">
-  <h2>Похожие посты</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="//2015/07/08/linux-commands/">
-            Команды Linux
-            <small><time datetime="2015-07-08T00:00:00+03:00">08 Jul 2015</time></small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
+    <h2>Похожие посты</h2>
+    <ul class="related-posts">
+        
+        <li>
+            <h3>
+                <a href="//2015/07/08/linux-commands/">
+                    Команды Linux
+                    <small>
+                        <time datetime="2015-07-08T00:00:00+03:00">08 Jul 2015</time>
+                    </small>
+                </a>
+            </h3>
+        </li>
+        
+    </ul>
 </aside>
 
-      </main>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
         <small style="padding-bottom: 15px">
-          &copy; <time datetime="2015-08-02T18:18:21+03:00">2015</time>. All rights reserved.
+            &copy;
+            <time datetime="2016-03-09T03:30:16+03:00">2016</time>
+            . All rights reserved.
         </small>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-  </body>
+</body>
 </html>
