@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+    Команды Linux &middot; Proshik`s blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Proshik`s blog" href="/atom.xml">
+</head>
+
+
+<body>
+
+<div class="container content">
+    <header class="masthead">
+        <h3 class="masthead-title">
+            <a href="/" title="Home">Proshik`s blog</a>
+            
+            &nbsp;&nbsp;&nbsp;
+            <small><a href="/archive">Archive</a></small>
+            
+            &nbsp;&nbsp;&nbsp;
+            <small><a href="/about">About blog</a></small>
+            
+        </h3>
+        <p class="masthead-tagline">
+            <small>Development & DevOps</small>
+        </p>
+        <hr style="margin-top: 0;">
+    </header>
+
+
+    <main>
+        <article class="post">
+    <h2 class="post-title">
+        Команды Linux
+    </h2>
+
+    <time datetime="2015-07-08T00:00:00+03:00" class="page-date">08 Jul 2015</time>
+    <h3>Основные команды</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls -lash /home              <span class="c"># Просмотр содержимого католога</span>
+<span class="nb">pwd</span>                         <span class="c"># Путь к текущему каталогу</span>
+su -                        <span class="c"># Стать root + его переменные окружения </span>
+<span class="nb">cd</span> /home                    <span class="c"># Переход в другой каталог</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">touch index.htm                    <span class="c"># Создать новый файл</span>
+mkdir -p /home/name/www/<span class="o">{</span>tools,i<span class="o">}</span>  <span class="c"># Создать каталог с подкаталогами</span>
+cp www/index.htm .                 <span class="c"># Копируем файл в текущий каталог</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">mv -v /home/name_bak /home/name    <span class="c"># Перемещение/переименование </span>
+                                   <span class="c"># файлов и каталогов</span>
+rm -rf /home/name/www              <span class="c"># Удаление каталога со всем </span>
+                                   <span class="c"># содержимым</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">which ls                    <span class="c"># Полный путь имени/расположение команды</span>
+whatis ls                   <span class="c"># Очень короткая справка о команде</span>
+whereis grep                <span class="c"># Путь к исполняемым файлам, </span>
+                            <span class="c"># исходным файлам и справочному рук-ву</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">date <span class="o">[</span>-u|--utc|--universal] <span class="o">[</span>MMDDhhmm[[CC]YY][.ss]]
+date 031713402011                  <span class="c"># Устанавливаем дату: </span>
+                                   <span class="c"># Чтв Мар 17 13:40:00 MSK 2011</span>
+<span class="nb">time </span>ls -lash /root                <span class="c"># Время выполнение команды</span>
+cal -3                             <span class="c"># Календарь на 3 месяца</span>
+<span class="nb">set</span> | grep <span class="nv">$USER</span>                   <span class="c"># Список переменных окружения</span>
+
+openssl md5 index.htm.bak          <span class="c"># Делаем md5 hash файла</span>
+</code></pre></div>
+<h3>Просмотр содержимого файлов</h3>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">cat bash.txt                <span class="c"># вывод содержимого файла(файлов)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">less -N /etc/named.conf     <span class="c"># постраничный вывод текста с нумерацией</span>
+                            <span class="c"># строк (с прокруткой файла)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">tail /var/log/mail/info     <span class="c"># команда выведет (по умолчанию) </span>
+                            <span class="c"># последние 10 строк из файла</span>
+tail -n2 /var/log/mail/info <span class="c"># вывод последних n строк файла</span>
+tail -f /var/log/messages   <span class="c"># слежение за файлом</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">head /var/log/main/info     <span class="c"># вывод первых строк файла</span>
+                            <span class="c"># далее как в "tail"</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">more /etc/named.conf        <span class="c"># вывод содержимого файла на </span>
+                            <span class="c"># экран отдельными страницами</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">nano /etc/named.conf        <span class="c"># просмотр и редактирование файла</span>
+</code></pre></div>
+<h3>Остальные команды</h3>
+
+<h4>Установка клиента ssh</h4>
+
+<p>Устанавливаем OpenSSH из терминала:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install ssh
+</code></pre></div>
+<h4>Операции работы с файлами и фильтрация</h4>
+
+<p><strong>cut</strong> - выводит выбранные части входных строк.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">cut -d: -f7 &lt; /etc/passwd | sort -u     <span class="c"># из файла /etc/password</span>
+                                        <span class="c"># пути к оболочке each users</span>
+</code></pre></div>
+<p><strong>grep</strong> - <em>&quot;General Regular Expression Parser”</em> - синтаксический 
+анализатор общих регулярных выражений.
+Формат команды:
+grep [опции] &lt;шаблон&gt; [один или более файлов]</p>
+
+<p>Шаблон - это регулярное выражение, хотя в большинстве случаев он состоит просто из одного слова
+Опции:</p>
+
+<ul>
+<li><strong>i</strong> - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);</li>
+<li><strong>v</strong> - обратный поиск. Вывод строк, которые не соответствуют шаблону;</li>
+<li><strong>n</strong> - вывод номера строки для каждой из найденных строк;</li>
+<li><strong>w</strong> - сообщает grep&#39;у, что шаблон должен совпадать со всем словом.</li>
+</ul>
+
+<p>Команда grep может быть использована в канале. </p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">grep <span class="s1">'^a'</span> <span class="s1">'words.txt'</span>   <span class="c"># ывести из файла «words.txt» все</span>
+                        <span class="c"># строки, начинающиеся с буквы «a»</span>
+</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">grep -f template.txt data.txt   <span class="c"># сравнить два файла и вывести</span>
+                                <span class="c"># совпадающие строки.</span>
+grep -f -v template.txt data.txt    <span class="c"># сравнить два файла и </span>
+                                    <span class="c"># вывести несовпадающие строки.</span>
+</code></pre></div>
+<h4>Фильтр процессов</h4>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ps -aef | grep <span class="s1">'[b]ash'</span>                 <span class="c"># Фильтр процессов без</span>
+ps -aef | grep -v <span class="s1">'grep'</span> | grep bash    <span class="c"># вывода самой команды grep,</span>
+                                        <span class="c"># например, если ищем bash</span>
+</code></pre></div>
+<h4>cURL - утилита для скачивания и загрузки файлов</h4>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">curl -O http://linux-notes.org/test_file.zip    <span class="c"># скачать и сохранить</span>
+</code></pre></div>
+<p><em>Пока все!</em></p>
+
+
+</article>
+
+
+<aside class="related">
+    <h2>Похожие посты</h2>
+    <ul class="related-posts">
+        
+        <li>
+            <h3>
+                <a href="//2015/04/12/after-ubuntu-install/">
+                    После установки Ubuntu
+                    <small>
+                        <time datetime="2015-04-12T00:00:00+03:00">12 Apr 2015</time>
+                    </small>
+                </a>
+            </h3>
+        </li>
+        
+    </ul>
+</aside>
+
+    </main>
+
+    <footer class="footer">
+        <small style="padding-bottom: 15px">
+            &copy;
+            <time datetime="2016-03-09T03:42:55+03:00">2016</time>
+            . All rights reserved.
+        </small>
+    </footer>
+</div>
+
+</body>
+</html>
