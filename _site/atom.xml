@@ -4,7 +4,7 @@
  <title>Proshik`s blog</title>
  <link href="http://proshik.github.io/atom.xml" rel="self"/>
  <link href="http://proshik.github.io/"/>
- <updated>2016-03-09T03:42:55+03:00</updated>
+ <updated>2016-03-09T03:44:56+03:00</updated>
  <id>http://proshik.github.io</id>
  <author>
    <name>Prokhor Krylov</name>
@@ -17,89 +17,140 @@
    <link href="http://proshik.github.io//2015/07/08/linux-commands/"/>
    <updated>2015-07-08T00:00:00+03:00</updated>
    <id>http://proshik.github.io/2015/07/08/linux-commands</id>
-   <content type="html">&lt;h3&gt;Основные команды&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ls -lash /home              &lt;span class=&quot;c&quot;&gt;# Просмотр содержимого католога&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;                         &lt;span class=&quot;c&quot;&gt;# Путь к текущему каталогу&lt;/span&gt;
-su -                        &lt;span class=&quot;c&quot;&gt;# Стать root + его переменные окружения &lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home                    &lt;span class=&quot;c&quot;&gt;# Переход в другой каталог&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;touch index.htm                    &lt;span class=&quot;c&quot;&gt;# Создать новый файл&lt;/span&gt;
-mkdir -p /home/name/www/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;tools,i&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Создать каталог с подкаталогами&lt;/span&gt;
-cp www/index.htm .                 &lt;span class=&quot;c&quot;&gt;# Копируем файл в текущий каталог&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mv -v /home/name_bak /home/name    &lt;span class=&quot;c&quot;&gt;# Перемещение/переименование &lt;/span&gt;
-                                   &lt;span class=&quot;c&quot;&gt;# файлов и каталогов&lt;/span&gt;
-rm -rf /home/name/www              &lt;span class=&quot;c&quot;&gt;# Удаление каталога со всем &lt;/span&gt;
-                                   &lt;span class=&quot;c&quot;&gt;# содержимым&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;which ls                    &lt;span class=&quot;c&quot;&gt;# Полный путь имени/расположение команды&lt;/span&gt;
-whatis ls                   &lt;span class=&quot;c&quot;&gt;# Очень короткая справка о команде&lt;/span&gt;
-whereis grep                &lt;span class=&quot;c&quot;&gt;# Путь к исполняемым файлам, &lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# исходным файлам и справочному рук-ву&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;date &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;-u|--utc|--universal] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;MMDDhhmm[[CC]YY][.ss]]
-date 031713402011                  &lt;span class=&quot;c&quot;&gt;# Устанавливаем дату: &lt;/span&gt;
-                                   &lt;span class=&quot;c&quot;&gt;# Чтв Мар 17 13:40:00 MSK 2011&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;ls -lash /root                &lt;span class=&quot;c&quot;&gt;# Время выполнение команды&lt;/span&gt;
-cal -3                             &lt;span class=&quot;c&quot;&gt;# Календарь на 3 месяца&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; | grep &lt;span class=&quot;nv&quot;&gt;$USER&lt;/span&gt;                   &lt;span class=&quot;c&quot;&gt;# Список переменных окружения&lt;/span&gt;
+   <content type="html">&lt;h3 id=&quot;section&quot;&gt;Основные команды&lt;/h3&gt;
 
-openssl md5 index.htm.bak          &lt;span class=&quot;c&quot;&gt;# Делаем md5 hash файла&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Просмотр содержимого файлов&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat bash.txt                &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла(файлов)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;less -N /etc/named.conf     &lt;span class=&quot;c&quot;&gt;# постраничный вывод текста с нумерацией&lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# строк (с прокруткой файла)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tail /var/log/mail/info     &lt;span class=&quot;c&quot;&gt;# команда выведет (по умолчанию) &lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# последние 10 строк из файла&lt;/span&gt;
-tail -n2 /var/log/mail/info &lt;span class=&quot;c&quot;&gt;# вывод последних n строк файла&lt;/span&gt;
-tail -f /var/log/messages   &lt;span class=&quot;c&quot;&gt;# слежение за файлом&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;head /var/log/main/info     &lt;span class=&quot;c&quot;&gt;# вывод первых строк файла&lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# далее как в &quot;tail&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;more /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# вывод содержимого файла на &lt;/span&gt;
-                            &lt;span class=&quot;c&quot;&gt;# экран отдельными страницами&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nano /etc/named.conf        &lt;span class=&quot;c&quot;&gt;# просмотр и редактирование файла&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Остальные команды&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+ls -lash /home              # Просмотр содержимого католога
+pwd                         # Путь к текущему каталогу
+su -                        # Стать root + его переменные окружения 
+cd /home                    # Переход в другой каталог
+&lt;/code&gt;&lt;/p&gt;
 
-&lt;h4&gt;Установка клиента ssh&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+touch index.htm                    # Создать новый файл
+mkdir -p /home/name/www/{tools,i}  # Создать каталог с подкаталогами
+cp www/index.htm .                 # Копируем файл в текущий каталог
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+mv -v /home/name_bak /home/name    # Перемещение/переименование 
+                                   # файлов и каталогов
+rm -rf /home/name/www              # Удаление каталога со всем 
+                                   # содержимым
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+which ls                    # Полный путь имени/расположение команды
+whatis ls                   # Очень короткая справка о команде
+whereis grep                # Путь к исполняемым файлам, 
+                            # исходным файлам и справочному рук-ву
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;```bash
+date [-u|–utc|–universal] [MMDDhhmm[[CC]YY][.ss]]
+date 031713402011                  # Устанавливаем дату: 
+                                   # Чтв Мар 17 13:40:00 MSK 2011
+time ls -lash /root                # Время выполнение команды
+cal -3                             # Календарь на 3 месяца
+set | grep $USER                   # Список переменных окружения&lt;/p&gt;
+
+&lt;p&gt;openssl md5 index.htm.bak          # Делаем md5 hash файла
+```&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;Просмотр содержимого файлов&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+cat bash.txt                # вывод содержимого файла(файлов)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+less -N /etc/named.conf     # постраничный вывод текста с нумерацией
+                            # строк (с прокруткой файла)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+tail /var/log/mail/info     # команда выведет (по умолчанию) 
+                            # последние 10 строк из файла
+tail -n2 /var/log/mail/info # вывод последних n строк файла
+tail -f /var/log/messages   # слежение за файлом
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+head /var/log/main/info     # вывод первых строк файла
+                            # далее как в &quot;tail&quot;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+more /etc/named.conf        # вывод содержимого файла на 
+                            # экран отдельными страницами
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+nano /etc/named.conf        # просмотр и редактирование файла
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;Остальные команды&lt;/h3&gt;
+
+&lt;h4 id=&quot;ssh&quot;&gt;Установка клиента ssh&lt;/h4&gt;
 
 &lt;p&gt;Устанавливаем OpenSSH из терминала:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install ssh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Операции работы с файлами и фильтрация&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-get install ssh
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;Операции работы с файлами и фильтрация&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;cut&lt;/strong&gt; - выводит выбранные части входных строк.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cut -d: -f7 &amp;lt; /etc/passwd | sort -u     &lt;span class=&quot;c&quot;&gt;# из файла /etc/password&lt;/span&gt;
-                                        &lt;span class=&quot;c&quot;&gt;# пути к оболочке each users&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;grep&lt;/strong&gt; - &lt;em&gt;&amp;quot;General Regular Expression Parser”&lt;/em&gt; - синтаксический 
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+cut -d: -f7 &amp;lt; /etc/passwd | sort -u     # из файла /etc/password
+                                        # пути к оболочке each users
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;grep&lt;/strong&gt; - &lt;em&gt;“General Regular Expression Parser”&lt;/em&gt; - синтаксический 
 анализатор общих регулярных выражений.
 Формат команды:
-grep [опции] &amp;lt;шаблон&amp;gt; [один или более файлов]&lt;/p&gt;
+grep [опции] &lt;шаблон&gt; [один или более файлов]&lt;/шаблон&gt;&lt;/p&gt;
 
 &lt;p&gt;Шаблон - это регулярное выражение, хотя в большинстве случаев он состоит просто из одного слова
 Опции:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;v&lt;/strong&gt; - обратный поиск. Вывод строк, которые не соответствуют шаблону;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;n&lt;/strong&gt; - вывод номера строки для каждой из найденных строк;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; - сообщает grep&amp;#39;у, что шаблон должен совпадать со всем словом.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;i&lt;/strong&gt; - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;v&lt;/strong&gt; - обратный поиск. Вывод строк, которые не соответствуют шаблону;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;n&lt;/strong&gt; - вывод номера строки для каждой из найденных строк;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;w&lt;/strong&gt; - сообщает grep’у, что шаблон должен совпадать со всем словом.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Команда grep может быть использована в канале. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep &lt;span class=&quot;s1&quot;&gt;&#39;^a&#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;words.txt&#39;&lt;/span&gt;   &lt;span class=&quot;c&quot;&gt;# ывести из файла «words.txt» все&lt;/span&gt;
-                        &lt;span class=&quot;c&quot;&gt;# строки, начинающиеся с буквы «a»&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;grep -f template.txt data.txt   &lt;span class=&quot;c&quot;&gt;# сравнить два файла и вывести&lt;/span&gt;
-                                &lt;span class=&quot;c&quot;&gt;# совпадающие строки.&lt;/span&gt;
-grep -f -v template.txt data.txt    &lt;span class=&quot;c&quot;&gt;# сравнить два файла и &lt;/span&gt;
-                                    &lt;span class=&quot;c&quot;&gt;# вывести несовпадающие строки.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Фильтр процессов&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ps -aef | grep &lt;span class=&quot;s1&quot;&gt;&#39;[b]ash&#39;&lt;/span&gt;                 &lt;span class=&quot;c&quot;&gt;# Фильтр процессов без&lt;/span&gt;
-ps -aef | grep -v &lt;span class=&quot;s1&quot;&gt;&#39;grep&#39;&lt;/span&gt; | grep bash    &lt;span class=&quot;c&quot;&gt;# вывода самой команды grep,&lt;/span&gt;
-                                        &lt;span class=&quot;c&quot;&gt;# например, если ищем bash&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;cURL - утилита для скачивания и загрузки файлов&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;curl -O http://linux-notes.org/test_file.zip    &lt;span class=&quot;c&quot;&gt;# скачать и сохранить&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Команда grep может быть использована в канале.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+grep &#39;^a&#39; &#39;words.txt&#39;   # ывести из файла «words.txt» все
+                        # строки, начинающиеся с буквы «a»
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+grep -f template.txt data.txt   # сравнить два файла и вывести
+                                # совпадающие строки.
+grep -f -v template.txt data.txt    # сравнить два файла и 
+                                    # вывести несовпадающие строки.
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;Фильтр процессов&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+ps -aef | grep &#39;[b]ash&#39;                 # Фильтр процессов без
+ps -aef | grep -v &#39;grep&#39; | grep bash    # вывода самой команды grep,
+                                        # например, если ищем bash
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;curl--------&quot;&gt;cURL - утилита для скачивания и загрузки файлов&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+curl -O http://linux-notes.org/test_file.zip    # скачать и сохранить
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Пока все!&lt;/em&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -109,7 +160,7 @@ ps -aef | grep -v &lt;span class=&quot;s1&quot;&gt;&#39;grep&#39;&lt;/span&gt; |
    <link href="http://proshik.github.io//2015/04/12/after-ubuntu-install/"/>
    <updated>2015-04-12T00:00:00+03:00</updated>
    <id>http://proshik.github.io/2015/04/12/after-ubuntu-install</id>
-   <content type="html">&lt;h3&gt;Вступление&lt;/h3&gt;
+   <content type="html">&lt;h3 id=&quot;section&quot;&gt;Вступление&lt;/h3&gt;
 
 &lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -120,124 +171,163 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 
 &lt;p&gt;Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
 
-&lt;h3&gt;В первую очередь&lt;/h3&gt;
-
-&lt;h4&gt;Google Chrome&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c &lt;span class=&quot;s1&quot;&gt;&#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/span&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;В первую очередь&lt;/h3&gt;
+&lt;p&gt;#### Google Chrome ####
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c &#39;echo &quot;deb http://dl.google.com/linux/chrome/deb/ stable main&quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google-chrome.list&#39;
 sudo apt-get update
 sudo apt-get install google-chrome-stable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Ubuntu Tweak&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:tualatrix/ppa
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ubuntu-tweak&quot;&gt;Ubuntu Tweak&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Skype&lt;/h4&gt;
+&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Добавляем репозиторий &amp;quot;партнеров Canonical&amp;quot;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository &lt;span class=&quot;s2&quot;&gt;&quot;deb http://archive.canonical.com/ &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;lsb_release -sc&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; partner&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Ищем в главном меню Dash &amp;quot;Программы и обновления&amp;quot;, либо идем в Параметры системы -  Программы и обновления.
-На вкладке &amp;quot;Другое ПО&amp;quot; ставим галку &amp;quot;Партнеры Canonical&amp;quot;
+&lt;h4 id=&quot;skype&quot;&gt;Skype&lt;/h4&gt;
+&lt;p&gt;Добавляем репозиторий “партнеров Canonical”&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo add-apt-repository &quot;deb http://archive.canonical.com/ $(lsb_release -sc) partner&quot;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ищем в главном меню Dash “Программы и обновления”, либо идем в Параметры системы -  Программы и обновления.
+На вкладке “Другое ПО” ставим галку “Партнеры Canonical”
 А теперь непосредственно ставим skype:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get update
-sudo apt-get install skype &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get -f install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Dropbox&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget -O - &lt;span class=&quot;s2&quot;&gt;&quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot;&lt;/span&gt; | tar xzf -
-~/.dropbox-dist/dropboxd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;SMPlayer&lt;/h4&gt;
 
-&lt;p&gt;Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:rvm/smplayer
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-get update
+sudo apt-get install skype &amp;amp;&amp;amp; sudo apt-get -f install
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;dropbox&quot;&gt;Dropbox&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+cd ~ &amp;amp;&amp;amp; wget -O - &quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot; | tar xzf -
+~/.dropbox-dist/dropboxd
+&lt;/code&gt;
+#### SMPlayer ####
+Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;1Password&lt;/h4&gt;
+&lt;/code&gt;&lt;/p&gt;
 
+&lt;h4 id=&quot;password&quot;&gt;1Password&lt;/h4&gt;
 &lt;p&gt;Понадобится еще Wine&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install wine
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-get install wine
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;и сам 1Password, качаем &lt;a href=&quot;https://agilebits.com/onepassword/windows&quot;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Затем устанавливаем 1Password&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;wine 1Password-4.1.0.530.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Если зачется открыть IntelliJ IDEA&lt;/h3&gt;
 
-&lt;h4&gt;Java&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo add-apt-repository ppa:webupd8team/java
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+wine 1Password-4.1.0.530.exe
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;intellij-idea&quot;&gt;Если зачется открыть IntelliJ IDEA&lt;/h3&gt;
+&lt;p&gt;#### Java ####
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;Для java 7:&lt;/h5&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install oracle-java7-installer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h5&gt;Для java 8:&lt;/h5&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install oracle-java8-installer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;java-7&quot;&gt;Для java 7:&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-get install oracle-java7-installer
+&lt;/code&gt;
+##### Для java 8: ######
+&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-get install oracle-java8-installer
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;Чтобы иметь несколько версий java в системе, можно выбирать используемую по умолчанию:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo update-java-alternatives -s java-7-oracle
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo update-java-alternatives -s java-7-oracle
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;Для других версий аналогично, просто меняем цифру версии.&lt;/p&gt;
 
-&lt;h4&gt;Postgresql&lt;/h4&gt;
-
+&lt;h4 id=&quot;postgresql&quot;&gt;Postgresql&lt;/h4&gt;
 &lt;p&gt;В своих проектах я использую чаще всего именно эту СУБД.
 Установка;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-add-repository ppa:pitti/postgresql
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
 sudo apt-get install postgresql-9.4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;Подключаемся к серверу postgresql и добавляем роль:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_database&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=#&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;USER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;postgres&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Git, maven, gradle, geany&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install git
-sudo apt-get install maven
 
-sudo add-apt-repository ppa:cwchien/gradle
-sudo apt-get update
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sql
+postgres=# CREATE DATABASE test_database;
+postgres=# CREATE USER postgres WITH password &#39;1&#39;;
+&lt;/code&gt;&lt;/p&gt;
 
-sudo apt-get install gradle
+&lt;h4 id=&quot;git-maven-gradle-geany&quot;&gt;Git, maven, gradle, geany&lt;/h4&gt;
+&lt;p&gt;```bash
+sudo apt-get install git
+sudo apt-get install maven&lt;/p&gt;
+
+&lt;p&gt;sudo add-apt-repository ppa:cwchien/gradle
+sudo apt-get update&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install gradle
 sudo apt-get install geany
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Написать статью в блог a.k.a. dependency for Jekyll&lt;/h3&gt;
+```&lt;/p&gt;
 
+&lt;h3 id=&quot;aka-dependency-for-jekyll&quot;&gt;Написать статью в блог a.k.a. dependency for Jekyll&lt;/h3&gt;
 &lt;p&gt;Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на &lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;GitHub Pages&lt;/a&gt;.
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.&lt;/p&gt;
 
-&lt;h4&gt;NodeJS&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;sudo apt-get install nodejs
+&lt;h4 id=&quot;nodejs&quot;&gt;NodeJS&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+sudo apt-get install nodejs
 sudo apt-get install npm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Ruby&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+&lt;/code&gt;
+#### Ruby ####
+```bash
+sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev&lt;/p&gt;
 
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /tmp
+&lt;p&gt;cd /tmp
 wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.1.tar.gz
 tar -xzvf ruby-2.2.1.tar.gz
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ruby-2.2.1/
-./configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local
+cd ruby-2.2.1/
+./configure –prefix=/usr/local
 make
 make install
 ruby -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Менеджер пакетов Ruby&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install bundler
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;Окружение Jekyll&lt;/h4&gt;
+```&lt;/p&gt;
 
+&lt;h4 id=&quot;ruby&quot;&gt;Менеджер пакетов Ruby&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+gem install bundler
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;jekyll&quot;&gt;Окружение Jekyll&lt;/h4&gt;
 &lt;p&gt;За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install github-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash 
+gem install github-pages
+&lt;/code&gt;
+И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash
+jekyll serve
+&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум - допишу!&lt;/em&gt;&lt;/p&gt;
 </content>

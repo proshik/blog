@@ -55,7 +55,7 @@
     </h2>
 
     <time datetime="2015-04-12T00:00:00+03:00" class="page-date">12 Apr 2015</time>
-    <h3>Вступление</h3>
+    <h3 id="section">Вступление</h3>
 
 <p>В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -66,124 +66,163 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 
 <p>Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.</p>
 
-<h3>В первую очередь</h3>
-
-<h4>Google Chrome</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c <span class="s1">'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</span>
+<h3 id="section-1">В первую очередь</h3>
+<p>#### Google Chrome ####
+<code class="highlighter-rouge">bash
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update
 sudo apt-get install google-chrome-stable
-</code></pre></div>
-<h4>Ubuntu Tweak</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:tualatrix/ppa
+</code></p>
+
+<h4 id="ubuntu-tweak">Ubuntu Tweak</h4>
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
-</code></pre></div>
-<h4>Skype</h4>
+</code></p>
 
-<p>Добавляем репозиторий &quot;партнеров Canonical&quot;</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="s2">"deb http://archive.canonical.com/ </span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2"> partner"</span>
-</code></pre></div>
-<p>Ищем в главном меню Dash &quot;Программы и обновления&quot;, либо идем в Параметры системы -  Программы и обновления.
-На вкладке &quot;Другое ПО&quot; ставим галку &quot;Партнеры Canonical&quot;
+<h4 id="skype">Skype</h4>
+<p>Добавляем репозиторий “партнеров Canonical”</p>
+
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+</code></p>
+
+<p>Ищем в главном меню Dash “Программы и обновления”, либо идем в Параметры системы -  Программы и обновления.
+На вкладке “Другое ПО” ставим галку “Партнеры Canonical”
 А теперь непосредственно ставим skype:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get install skype <span class="o">&amp;&amp;</span> sudo apt-get -f install
-</code></pre></div>
-<h4>Dropbox</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> wget -O - <span class="s2">"https://www.dropbox.com/download?plat=lnx.x86_64"</span> | tar xzf -
-~/.dropbox-dist/dropboxd
-</code></pre></div>
-<h4>SMPlayer</h4>
 
-<p>Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:rvm/smplayer
+<p><code class="highlighter-rouge">bash
+sudo apt-get update
+sudo apt-get install skype &amp;&amp; sudo apt-get -f install
+</code></p>
+
+<h4 id="dropbox">Dropbox</h4>
+
+<p><code class="highlighter-rouge">bash
+cd ~ &amp;&amp; wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+</code>
+#### SMPlayer ####
+Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
+
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
-</code></pre></div>
-<h4>1Password</h4>
+</code></p>
 
+<h4 id="password">1Password</h4>
 <p>Понадобится еще Wine</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install wine
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash
+sudo apt-get install wine
+</code></p>
+
 <p>и сам 1Password, качаем <a href="https://agilebits.com/onepassword/windows">здесь</a>.</p>
 
 <p>Затем устанавливаем 1Password</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">wine 1Password-4.1.0.530.exe
-</code></pre></div>
-<h3>Если зачется открыть IntelliJ IDEA</h3>
 
-<h4>Java</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:webupd8team/java
+<p><code class="highlighter-rouge">bash
+wine 1Password-4.1.0.530.exe
+</code></p>
+
+<h3 id="intellij-idea">Если зачется открыть IntelliJ IDEA</h3>
+<p>#### Java ####
+<code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-</code></pre></div>
-<h5>Для java 7:</h5>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java7-installer
-</code></pre></div>
-<h5>Для java 8:</h5>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java8-installer
-</code></pre></div>
+</code></p>
+
+<h5 id="java-7">Для java 7:</h5>
+<p><code class="highlighter-rouge">bash
+sudo apt-get install oracle-java7-installer
+</code>
+##### Для java 8: ######
+<code class="highlighter-rouge">bash
+sudo apt-get install oracle-java8-installer
+</code></p>
+
 <p>Чтобы иметь несколько версий java в системе, можно выбирать используемую по умолчанию:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo update-java-alternatives -s java-7-oracle
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash
+sudo update-java-alternatives -s java-7-oracle
+</code></p>
+
 <p>Для других версий аналогично, просто меняем цифру версии.</p>
 
-<h4>Postgresql</h4>
-
+<h4 id="postgresql">Postgresql</h4>
 <p>В своих проектах я использую чаще всего именно эту СУБД.
 Установка;</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-add-repository ppa:pitti/postgresql
+
+<p><code class="highlighter-rouge">bash
+sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
 sudo apt-get install postgresql-9.4
-</code></pre></div>
+</code></p>
+
 <p>Подключаемся к серверу postgresql и добавляем роль:</p>
-<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">test_database</span><span class="p">;</span>
-<span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="n">postgres</span> <span class="k">WITH</span> <span class="n">password</span> <span class="s1">'1'</span><span class="p">;</span>
-</code></pre></div>
-<h4>Git, maven, gradle, geany</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install git
-sudo apt-get install maven
 
-sudo add-apt-repository ppa:cwchien/gradle
-sudo apt-get update
+<p><code class="highlighter-rouge">sql
+postgres=# CREATE DATABASE test_database;
+postgres=# CREATE USER postgres WITH password '1';
+</code></p>
 
-sudo apt-get install gradle
+<h4 id="git-maven-gradle-geany">Git, maven, gradle, geany</h4>
+<p>```bash
+sudo apt-get install git
+sudo apt-get install maven</p>
+
+<p>sudo add-apt-repository ppa:cwchien/gradle
+sudo apt-get update</p>
+
+<p>sudo apt-get install gradle
 sudo apt-get install geany
-</code></pre></div>
-<h3>Написать статью в блог a.k.a. dependency for Jekyll</h3>
+```</p>
 
+<h3 id="aka-dependency-for-jekyll">Написать статью в блог a.k.a. dependency for Jekyll</h3>
 <p>Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на <a href="https://pages.github.com/versions/">GitHub Pages</a>.
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.</p>
 
-<h4>NodeJS</h4>
-<div class="highlight"><pre><code class="language-" data-lang="">sudo apt-get install nodejs
+<h4 id="nodejs">NodeJS</h4>
+<p><code class="highlighter-rouge">
+sudo apt-get install nodejs
 sudo apt-get install npm
-</code></pre></div>
-<h4>Ruby</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+</code>
+#### Ruby ####
+```bash
+sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev</p>
 
-<span class="nb">cd</span> /tmp
+<p>cd /tmp
 wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.1.tar.gz
 tar -xzvf ruby-2.2.1.tar.gz
-<span class="nb">cd </span>ruby-2.2.1/
-./configure --prefix<span class="o">=</span>/usr/local
+cd ruby-2.2.1/
+./configure –prefix=/usr/local
 make
 make install
 ruby -v
-</code></pre></div>
-<h4>Менеджер пакетов Ruby</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
-</code></pre></div>
-<h4>Окружение Jekyll</h4>
+```</p>
 
+<h4 id="ruby">Менеджер пакетов Ruby</h4>
+<p><code class="highlighter-rouge">bash
+gem install bundler
+</code></p>
+
+<h4 id="jekyll">Окружение Jekyll</h4>
 <p>За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install github-pages
-</code></pre></div>
-<p>И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">jekyll serve
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash 
+gem install github-pages
+</code>
+И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой</p>
+
+<p><code class="highlighter-rouge">bash
+jekyll serve
+</code></p>
+
 <p><em>Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум - допишу!</em></p>
 
@@ -214,7 +253,7 @@ ruby -v
     <footer class="footer">
         <small style="padding-bottom: 15px">
             &copy;
-            <time datetime="2016-03-09T03:42:55+03:00">2016</time>
+            <time datetime="2016-03-09T03:44:56+03:00">2016</time>
             . All rights reserved.
         </small>
     </footer>

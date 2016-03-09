@@ -59,89 +59,140 @@
         </h2>
 
         <time datetime="2015-07-08T00:00:00+03:00" class="post-date">08 Jul 2015</time>
-        <h3>Основные команды</h3>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls -lash /home              <span class="c"># Просмотр содержимого католога</span>
-<span class="nb">pwd</span>                         <span class="c"># Путь к текущему каталогу</span>
-su -                        <span class="c"># Стать root + его переменные окружения </span>
-<span class="nb">cd</span> /home                    <span class="c"># Переход в другой каталог</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">touch index.htm                    <span class="c"># Создать новый файл</span>
-mkdir -p /home/name/www/<span class="o">{</span>tools,i<span class="o">}</span>  <span class="c"># Создать каталог с подкаталогами</span>
-cp www/index.htm .                 <span class="c"># Копируем файл в текущий каталог</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">mv -v /home/name_bak /home/name    <span class="c"># Перемещение/переименование </span>
-                                   <span class="c"># файлов и каталогов</span>
-rm -rf /home/name/www              <span class="c"># Удаление каталога со всем </span>
-                                   <span class="c"># содержимым</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">which ls                    <span class="c"># Полный путь имени/расположение команды</span>
-whatis ls                   <span class="c"># Очень короткая справка о команде</span>
-whereis grep                <span class="c"># Путь к исполняемым файлам, </span>
-                            <span class="c"># исходным файлам и справочному рук-ву</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">date <span class="o">[</span>-u|--utc|--universal] <span class="o">[</span>MMDDhhmm[[CC]YY][.ss]]
-date 031713402011                  <span class="c"># Устанавливаем дату: </span>
-                                   <span class="c"># Чтв Мар 17 13:40:00 MSK 2011</span>
-<span class="nb">time </span>ls -lash /root                <span class="c"># Время выполнение команды</span>
-cal -3                             <span class="c"># Календарь на 3 месяца</span>
-<span class="nb">set</span> | grep <span class="nv">$USER</span>                   <span class="c"># Список переменных окружения</span>
+        <h3 id="section">Основные команды</h3>
 
-openssl md5 index.htm.bak          <span class="c"># Делаем md5 hash файла</span>
-</code></pre></div>
-<h3>Просмотр содержимого файлов</h3>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">cat bash.txt                <span class="c"># вывод содержимого файла(файлов)</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">less -N /etc/named.conf     <span class="c"># постраничный вывод текста с нумерацией</span>
-                            <span class="c"># строк (с прокруткой файла)</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">tail /var/log/mail/info     <span class="c"># команда выведет (по умолчанию) </span>
-                            <span class="c"># последние 10 строк из файла</span>
-tail -n2 /var/log/mail/info <span class="c"># вывод последних n строк файла</span>
-tail -f /var/log/messages   <span class="c"># слежение за файлом</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">head /var/log/main/info     <span class="c"># вывод первых строк файла</span>
-                            <span class="c"># далее как в "tail"</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">more /etc/named.conf        <span class="c"># вывод содержимого файла на </span>
-                            <span class="c"># экран отдельными страницами</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">nano /etc/named.conf        <span class="c"># просмотр и редактирование файла</span>
-</code></pre></div>
-<h3>Остальные команды</h3>
+<p><code class="highlighter-rouge">bash
+ls -lash /home              # Просмотр содержимого католога
+pwd                         # Путь к текущему каталогу
+su -                        # Стать root + его переменные окружения 
+cd /home                    # Переход в другой каталог
+</code></p>
 
-<h4>Установка клиента ssh</h4>
+<p><code class="highlighter-rouge">bash
+touch index.htm                    # Создать новый файл
+mkdir -p /home/name/www/{tools,i}  # Создать каталог с подкаталогами
+cp www/index.htm .                 # Копируем файл в текущий каталог
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+mv -v /home/name_bak /home/name    # Перемещение/переименование 
+                                   # файлов и каталогов
+rm -rf /home/name/www              # Удаление каталога со всем 
+                                   # содержимым
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+which ls                    # Полный путь имени/расположение команды
+whatis ls                   # Очень короткая справка о команде
+whereis grep                # Путь к исполняемым файлам, 
+                            # исходным файлам и справочному рук-ву
+</code></p>
+
+<p>```bash
+date [-u|–utc|–universal] [MMDDhhmm[[CC]YY][.ss]]
+date 031713402011                  # Устанавливаем дату: 
+                                   # Чтв Мар 17 13:40:00 MSK 2011
+time ls -lash /root                # Время выполнение команды
+cal -3                             # Календарь на 3 месяца
+set | grep $USER                   # Список переменных окружения</p>
+
+<p>openssl md5 index.htm.bak          # Делаем md5 hash файла
+```</p>
+
+<h3 id="section-1">Просмотр содержимого файлов</h3>
+
+<p><code class="highlighter-rouge">bash
+cat bash.txt                # вывод содержимого файла(файлов)
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+less -N /etc/named.conf     # постраничный вывод текста с нумерацией
+                            # строк (с прокруткой файла)
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+tail /var/log/mail/info     # команда выведет (по умолчанию) 
+                            # последние 10 строк из файла
+tail -n2 /var/log/mail/info # вывод последних n строк файла
+tail -f /var/log/messages   # слежение за файлом
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+head /var/log/main/info     # вывод первых строк файла
+                            # далее как в "tail"
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+more /etc/named.conf        # вывод содержимого файла на 
+                            # экран отдельными страницами
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+nano /etc/named.conf        # просмотр и редактирование файла
+</code></p>
+
+<h3 id="section-2">Остальные команды</h3>
+
+<h4 id="ssh">Установка клиента ssh</h4>
 
 <p>Устанавливаем OpenSSH из терминала:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install ssh
-</code></pre></div>
-<h4>Операции работы с файлами и фильтрация</h4>
+
+<p><code class="highlighter-rouge">bash
+sudo apt-get install ssh
+</code></p>
+
+<h4 id="section-3">Операции работы с файлами и фильтрация</h4>
 
 <p><strong>cut</strong> - выводит выбранные части входных строк.</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">cut -d: -f7 &lt; /etc/passwd | sort -u     <span class="c"># из файла /etc/password</span>
-                                        <span class="c"># пути к оболочке each users</span>
-</code></pre></div>
-<p><strong>grep</strong> - <em>&quot;General Regular Expression Parser”</em> - синтаксический 
+
+<p><code class="highlighter-rouge">bash
+cut -d: -f7 &lt; /etc/passwd | sort -u     # из файла /etc/password
+                                        # пути к оболочке each users
+</code></p>
+
+<p><strong>grep</strong> - <em>“General Regular Expression Parser”</em> - синтаксический 
 анализатор общих регулярных выражений.
 Формат команды:
-grep [опции] &lt;шаблон&gt; [один или более файлов]</p>
+grep [опции] <шаблон> [один или более файлов]</шаблон></p>
 
 <p>Шаблон - это регулярное выражение, хотя в большинстве случаев он состоит просто из одного слова
 Опции:</p>
 
 <ul>
-<li><strong>i</strong> - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);</li>
-<li><strong>v</strong> - обратный поиск. Вывод строк, которые не соответствуют шаблону;</li>
-<li><strong>n</strong> - вывод номера строки для каждой из найденных строк;</li>
-<li><strong>w</strong> - сообщает grep&#39;у, что шаблон должен совпадать со всем словом.</li>
+  <li><strong>i</strong> - поиск без учета регистра (т.е. игнорирование разницы между верхним и нижним регистром);</li>
+  <li><strong>v</strong> - обратный поиск. Вывод строк, которые не соответствуют шаблону;</li>
+  <li><strong>n</strong> - вывод номера строки для каждой из найденных строк;</li>
+  <li><strong>w</strong> - сообщает grep’у, что шаблон должен совпадать со всем словом.</li>
 </ul>
 
-<p>Команда grep может быть использована в канале. </p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">grep <span class="s1">'^a'</span> <span class="s1">'words.txt'</span>   <span class="c"># ывести из файла «words.txt» все</span>
-                        <span class="c"># строки, начинающиеся с буквы «a»</span>
-</code></pre></div><div class="highlight"><pre><code class="language-bash" data-lang="bash">grep -f template.txt data.txt   <span class="c"># сравнить два файла и вывести</span>
-                                <span class="c"># совпадающие строки.</span>
-grep -f -v template.txt data.txt    <span class="c"># сравнить два файла и </span>
-                                    <span class="c"># вывести несовпадающие строки.</span>
-</code></pre></div>
-<h4>Фильтр процессов</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">ps -aef | grep <span class="s1">'[b]ash'</span>                 <span class="c"># Фильтр процессов без</span>
-ps -aef | grep -v <span class="s1">'grep'</span> | grep bash    <span class="c"># вывода самой команды grep,</span>
-                                        <span class="c"># например, если ищем bash</span>
-</code></pre></div>
-<h4>cURL - утилита для скачивания и загрузки файлов</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">curl -O http://linux-notes.org/test_file.zip    <span class="c"># скачать и сохранить</span>
-</code></pre></div>
+<p>Команда grep может быть использована в канале.</p>
+
+<p><code class="highlighter-rouge">bash
+grep '^a' 'words.txt'   # ывести из файла «words.txt» все
+                        # строки, начинающиеся с буквы «a»
+</code></p>
+
+<p><code class="highlighter-rouge">bash
+grep -f template.txt data.txt   # сравнить два файла и вывести
+                                # совпадающие строки.
+grep -f -v template.txt data.txt    # сравнить два файла и 
+                                    # вывести несовпадающие строки.
+</code></p>
+
+<h4 id="section-4">Фильтр процессов</h4>
+
+<p><code class="highlighter-rouge">bash
+ps -aef | grep '[b]ash'                 # Фильтр процессов без
+ps -aef | grep -v 'grep' | grep bash    # вывода самой команды grep,
+                                        # например, если ищем bash
+</code></p>
+
+<h4 id="curl--------">cURL - утилита для скачивания и загрузки файлов</h4>
+
+<p><code class="highlighter-rouge">bash
+curl -O http://linux-notes.org/test_file.zip    # скачать и сохранить
+</code></p>
+
 <p><em>Пока все!</em></p>
 
 
@@ -155,7 +206,7 @@ ps -aef | grep -v <span class="s1">'grep'</span> | grep bash    <span class="c">
         </h2>
 
         <time datetime="2015-04-12T00:00:00+03:00" class="post-date">12 Apr 2015</time>
-        <h3>Вступление</h3>
+        <h3 id="section">Вступление</h3>
 
 <p>В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
@@ -166,124 +217,163 @@ Ubuntu. Только вот оказалось я ежедневно польз�
 
 <p>Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.</p>
 
-<h3>В первую очередь</h3>
-
-<h4>Google Chrome</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c <span class="s1">'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'</span>
+<h3 id="section-1">В первую очередь</h3>
+<p>#### Google Chrome ####
+<code class="highlighter-rouge">bash
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" &gt;&gt; /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update
 sudo apt-get install google-chrome-stable
-</code></pre></div>
-<h4>Ubuntu Tweak</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:tualatrix/ppa
+</code></p>
+
+<h4 id="ubuntu-tweak">Ubuntu Tweak</h4>
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update 
 sudo apt-get install ubuntu-tweak
-</code></pre></div>
-<h4>Skype</h4>
+</code></p>
 
-<p>Добавляем репозиторий &quot;партнеров Canonical&quot;</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository <span class="s2">"deb http://archive.canonical.com/ </span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2"> partner"</span>
-</code></pre></div>
-<p>Ищем в главном меню Dash &quot;Программы и обновления&quot;, либо идем в Параметры системы -  Программы и обновления.
-На вкладке &quot;Другое ПО&quot; ставим галку &quot;Партнеры Canonical&quot;
+<h4 id="skype">Skype</h4>
+<p>Добавляем репозиторий “партнеров Canonical”</p>
+
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+</code></p>
+
+<p>Ищем в главном меню Dash “Программы и обновления”, либо идем в Параметры системы -  Программы и обновления.
+На вкладке “Другое ПО” ставим галку “Партнеры Canonical”
 А теперь непосредственно ставим skype:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get install skype <span class="o">&amp;&amp;</span> sudo apt-get -f install
-</code></pre></div>
-<h4>Dropbox</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> wget -O - <span class="s2">"https://www.dropbox.com/download?plat=lnx.x86_64"</span> | tar xzf -
-~/.dropbox-dist/dropboxd
-</code></pre></div>
-<h4>SMPlayer</h4>
 
-<p>Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:rvm/smplayer
+<p><code class="highlighter-rouge">bash
+sudo apt-get update
+sudo apt-get install skype &amp;&amp; sudo apt-get -f install
+</code></p>
+
+<h4 id="dropbox">Dropbox</h4>
+
+<p><code class="highlighter-rouge">bash
+cd ~ &amp;&amp; wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+</code>
+#### SMPlayer ####
+Иногда хочется посмотреть ~~скаченный с торрентов~~ купленный легально фильм</p>
+
+<p><code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
 sudo apt-get install smplayer smplayer-themes smplayer-translations
-</code></pre></div>
-<h4>1Password</h4>
+</code></p>
 
+<h4 id="password">1Password</h4>
 <p>Понадобится еще Wine</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install wine
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash
+sudo apt-get install wine
+</code></p>
+
 <p>и сам 1Password, качаем <a href="https://agilebits.com/onepassword/windows">здесь</a>.</p>
 
 <p>Затем устанавливаем 1Password</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">wine 1Password-4.1.0.530.exe
-</code></pre></div>
-<h3>Если зачется открыть IntelliJ IDEA</h3>
 
-<h4>Java</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo add-apt-repository ppa:webupd8team/java
+<p><code class="highlighter-rouge">bash
+wine 1Password-4.1.0.530.exe
+</code></p>
+
+<h3 id="intellij-idea">Если зачется открыть IntelliJ IDEA</h3>
+<p>#### Java ####
+<code class="highlighter-rouge">bash
+sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-</code></pre></div>
-<h5>Для java 7:</h5>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java7-installer
-</code></pre></div>
-<h5>Для java 8:</h5>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install oracle-java8-installer
-</code></pre></div>
+</code></p>
+
+<h5 id="java-7">Для java 7:</h5>
+<p><code class="highlighter-rouge">bash
+sudo apt-get install oracle-java7-installer
+</code>
+##### Для java 8: ######
+<code class="highlighter-rouge">bash
+sudo apt-get install oracle-java8-installer
+</code></p>
+
 <p>Чтобы иметь несколько версий java в системе, можно выбирать используемую по умолчанию:</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo update-java-alternatives -s java-7-oracle
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash
+sudo update-java-alternatives -s java-7-oracle
+</code></p>
+
 <p>Для других версий аналогично, просто меняем цифру версии.</p>
 
-<h4>Postgresql</h4>
-
+<h4 id="postgresql">Postgresql</h4>
 <p>В своих проектах я использую чаще всего именно эту СУБД.
 Установка;</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-add-repository ppa:pitti/postgresql
+
+<p><code class="highlighter-rouge">bash
+sudo apt-add-repository ppa:pitti/postgresql
 sudo apt-get update
 sudo apt-get install postgresql-9.4
-</code></pre></div>
+</code></p>
+
 <p>Подключаемся к серверу postgresql и добавляем роль:</p>
-<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">test_database</span><span class="p">;</span>
-<span class="n">postgres</span><span class="o">=#</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="n">postgres</span> <span class="k">WITH</span> <span class="n">password</span> <span class="s1">'1'</span><span class="p">;</span>
-</code></pre></div>
-<h4>Git, maven, gradle, geany</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install git
-sudo apt-get install maven
 
-sudo add-apt-repository ppa:cwchien/gradle
-sudo apt-get update
+<p><code class="highlighter-rouge">sql
+postgres=# CREATE DATABASE test_database;
+postgres=# CREATE USER postgres WITH password '1';
+</code></p>
 
-sudo apt-get install gradle
+<h4 id="git-maven-gradle-geany">Git, maven, gradle, geany</h4>
+<p>```bash
+sudo apt-get install git
+sudo apt-get install maven</p>
+
+<p>sudo add-apt-repository ppa:cwchien/gradle
+sudo apt-get update</p>
+
+<p>sudo apt-get install gradle
 sudo apt-get install geany
-</code></pre></div>
-<h3>Написать статью в блог a.k.a. dependency for Jekyll</h3>
+```</p>
 
+<h3 id="aka-dependency-for-jekyll">Написать статью в блог a.k.a. dependency for Jekyll</h3>
 <p>Для работы jekyll понадобится ruby, и не какая то версия а именно 2.2.1, 
 как указано в зависимостях на <a href="https://pages.github.com/versions/">GitHub Pages</a>.
 Правда потом выяснится, что для работы jekyll нужна среда выполнения javascript, поэтому
 предварительно поставим еще NodeJS и npm.</p>
 
-<h4>NodeJS</h4>
-<div class="highlight"><pre><code class="language-" data-lang="">sudo apt-get install nodejs
+<h4 id="nodejs">NodeJS</h4>
+<p><code class="highlighter-rouge">
+sudo apt-get install nodejs
 sudo apt-get install npm
-</code></pre></div>
-<h4>Ruby</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+</code>
+#### Ruby ####
+```bash
+sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev</p>
 
-<span class="nb">cd</span> /tmp
+<p>cd /tmp
 wget http://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.1.tar.gz
 tar -xzvf ruby-2.2.1.tar.gz
-<span class="nb">cd </span>ruby-2.2.1/
-./configure --prefix<span class="o">=</span>/usr/local
+cd ruby-2.2.1/
+./configure –prefix=/usr/local
 make
 make install
 ruby -v
-</code></pre></div>
-<h4>Менеджер пакетов Ruby</h4>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install bundler
-</code></pre></div>
-<h4>Окружение Jekyll</h4>
+```</p>
 
+<h4 id="ruby">Менеджер пакетов Ruby</h4>
+<p><code class="highlighter-rouge">bash
+gem install bundler
+</code></p>
+
+<h4 id="jekyll">Окружение Jekyll</h4>
 <p>За место установки необходимых для GitPages зависимостей, можно одним пакетом все доставить</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install github-pages
-</code></pre></div>
-<p>И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">jekyll serve
-</code></pre></div>
+
+<p><code class="highlighter-rouge">bash 
+gem install github-pages
+</code>
+И теперь заходим в папку проекта и на http://localhost:4000 поднимаем сайт командой</p>
+
+<p><code class="highlighter-rouge">bash
+jekyll serve
+</code></p>
+
 <p><em>Пока все! Т.к. писал уже после всех действий, вероятно часть забыл, 
 но если что придет на ум - допишу!</em></p>
 
@@ -306,7 +396,7 @@ ruby -v
     <footer class="footer">
         <small style="padding-bottom: 15px">
             &copy;
-            <time datetime="2016-03-09T03:42:55+03:00">2016</time>
+            <time datetime="2016-03-09T03:44:56+03:00">2016</time>
             . All rights reserved.
         </small>
     </footer>

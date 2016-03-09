@@ -26,7 +26,7 @@ pages_list:
   Archive: '/archive'
   About blog: '/about'
 
-markdown: redcarpet
+markdown: kramdown
 
 gems :
   - jekyll-paginate
