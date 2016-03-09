@@ -53,7 +53,7 @@ html {
 
 @media (min-width: 38em) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -338,7 +338,7 @@ tbody tr:nth-child(odd) th {
     letter-spacing: 0;
 }
 
-.masthead-tagline small{
+.masthead-tagline small {
     font-size: 100%;
     font-weight: 400;
     color: #c0c0c0;
@@ -361,7 +361,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-    color: #303030;
+    color: #268bd2;
 }
 
 .page-title,
@@ -379,6 +379,7 @@ tbody tr:nth-child(odd) th {
 
 .page-date {
     display: block;
+    font-size: 80%;
     margin-top: -.5rem;
     margin-bottom: 1rem;
     color: #9a9a9a;
@@ -392,7 +393,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .related-posts {
-    padding-left: 0;
+    padding-left: 1rem;
     list-style: none;
 }
 
@@ -412,6 +413,10 @@ tbody tr:nth-child(odd) th {
 
 .related-posts li a:hover small {
     color: inherit;
+}
+
+.entry h2 {
+    color: #999;
 }
 
 /*

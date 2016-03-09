@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Команды Linux
+excerpt_separator: <!--more-->
 ---
 
 
@@ -18,6 +19,8 @@ touch index.htm                    # Создать новый файл
 mkdir -p /home/name/www/{tools,i}  # Создать каталог с подкаталогами
 cp www/index.htm .                 # Копируем файл в текущий каталог
 ```
+
+<!--more-->
 
 ```bash
 mv -v /home/name_bak /home/name    # Перемещение/переименование 
