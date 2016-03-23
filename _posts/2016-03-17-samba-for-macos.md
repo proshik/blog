@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Настройка и установка Samba в Ubuntu для доступа из OS X
+title: Установка Samba в Ubuntu для доступа из OS X
 excerpt_separator: <!--more-->
 ---
 
