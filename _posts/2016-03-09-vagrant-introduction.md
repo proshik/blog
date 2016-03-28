@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Vagrant. Introduction. Part 1
+tags: [ vagrant ]
 excerpt_separator: <!--more-->
 ---
 

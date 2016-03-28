@@ -2,13 +2,27 @@
 layout: default
 ---
 
-<article class="post">
+<div class="post">
     <h2 class="post-title">
         {{ page.title }}
     </h2>
-    <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+    <div class="page-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+        <ul class="tag-box inline" style="float:right;font-size:0.875em">
+            {% capture tags %}
+            {% for tag in page.tags %}
+            {{ tag }}
+            {% endfor %}
+            {% endcapture %}
+            {% assign sortedtags = tags | split:' ' | sort %}
+
+            {% for tag in sortedtags %}
+            <li><a href="/tags#{{ tag | cgi_escape }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
     {{ content }}
-</article>
+</div>
 
 
 <aside class="related">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Команды Linux
+tags: [ linux, ubuntu ]
 excerpt_separator: <!--more-->
 ---
 

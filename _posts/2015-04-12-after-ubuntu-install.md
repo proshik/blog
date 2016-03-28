@@ -1,6 +1,7 @@
 ---
 layout: post
 title: После установки Ubuntu
+tags: [ linux, ubuntu ]
 excerpt_separator: <!--more-->
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Установка Samba в Ubuntu для доступа из OS X
+tags: [ linux, os_x, samba ]
 excerpt_separator: <!--more-->
 ---
 

@@ -9,7 +9,7 @@ title:            Proshik`s blog
 tagline:          Development & DevOps
 url:              http://proshik.github.io
 description:      Proshik`s blog
-paginate:         3
+paginate:         5
 baseurl:          /
 
 markdown: redcarpet
@@ -25,7 +25,9 @@ github:
 #Links
 pages_list:
   Archive: '/archive'
+  Feed: '/feed.xml'
   About blog: '/about'
+
 
 markdown: kramdown
 
