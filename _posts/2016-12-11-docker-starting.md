@@ -31,4 +31,5 @@ docker run -d --name kibana --link elasticsearch:elasticsearch -e ELASTICSEARCH_
 docker run -d --name logstash --link elasticsearch:elasticsearch -p 5000:5000 -v /tmp/docker/volume/elk/config/logstash:/config-dir logstash -f /config-dir/logstash.conf
 
 Приложение через syslog для ELK:
-docker run -it --rm --name nginx --log-driver=syslog --log-opt syslog-address=tcp://172.17.0.4:5000 -p 80:80 nginx
+export IP_LOGSTASH=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' logstash)
+docker run -it --rm --name nginx --log-driver=syslog --log-opt syslog-address=tcp://$IP_LOGSTASH:5000 -p 80:80 nginx
