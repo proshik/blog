@@ -12,8 +12,6 @@ description:      Proshik`s blog
 paginate:         5
 baseurl:          /
 
-markdown: redcarpet
-
 author:
   name:           Prokhor Krylov
 
