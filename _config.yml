@@ -1,35 +1,39 @@
-# Permalinks
-permalink:        pretty
-
-#For jekyll 2, becuse was commented
-#relative_permalinks: true
-
-# Setup
-title:            Proshik Inc
-tagline:          Development & DevOps
-url:              http://proshik.github.io
-description:      Proshik`s blog
-paginate:         5
-baseurl:          /
-
-markdown: redcarpet
+# Site settings
+title: Proshik Inc
+description: Development & DevOps
+url: http://proshik.ru
+baseurl: /
+google_analytics: UA-75725805-1
+disqus_shortname: proshik
 
 author:
-  name:           Prokhor Krylov
+  name: 'Prokhor Krylov'
+  email: proxoraleksandrovich@gmail.com
+  twitter_username: proshik
+  facebook_username: proshik
+  github_username: proshik
+  linkedin_username: prokhor-krylov-a02757a4?trk=hp-identity-name
 
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/proshik/proshik.github.io
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
-#Links
-pages_list:
-  Archive: '/archive'
-  Feed: '/feed.xml'
-  About blog: '/about'
-
-
+# Build settings
+destination: _site
+paginate: 5
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
 
-gems :
-  - jekyll-paginate
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
