@@ -1,7 +1,7 @@
 # Site settings
 title: Proshik Inc.
 description: Development & DevOps
-url: http://proshik.ru
+url: https://proshik.ru
 baseurl: /
 google_analytics: UA-75725805-1
 disqus_shortname: proshik
