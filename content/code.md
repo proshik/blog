@@ -1,6 +1,6 @@
 +++
 title = "Code"
 menu = "main"
-disable_comments = false
+disable_comments = true
 weight = 20
 +++

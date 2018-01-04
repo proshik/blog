@@ -2,7 +2,7 @@
 title = "Me"
 date = "2014-04-09"
 menu = "main"
-disable_comments = false
+disable_comments = true
 weight = 30
 +++
 
