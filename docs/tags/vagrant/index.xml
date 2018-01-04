@@ -13,10 +13,10 @@
         
         <item>
             <title>Vagrant. Introduction. Part 1</title>
-            <link>http://proshik.github.io/blog/2016-03-09-vagrant-introduction/</link>
+            <link>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</link>
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-03-09-vagrant-introduction/</guid>
+            <guid>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</guid>
             <description>&lt;p&gt;Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI.
 Мы будем использовать в качестве &lt;em&gt;провайдера&lt;/em&gt; VirtualBox, но для этой цели так-же подходит VMWare, LXC и.др.
 Для чего это может быть нужно:&lt;/p&gt;

@@ -12,20 +12,20 @@
         
         
         <item>
-            <title>Blog</title>
-            <link>http://proshik.github.io/blog/</link>
+            <title>Post</title>
+            <link>http://proshik.github.io/post/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/</guid>
+            <guid>http://proshik.github.io/post/</guid>
             <description></description>
         </item>
         
         <item>
-            <title>Code</title>
-            <link>http://proshik.github.io/code/</link>
+            <title>Project</title>
+            <link>http://proshik.github.io/project/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/code/</guid>
+            <guid>http://proshik.github.io/project/</guid>
             <description></description>
         </item>
         
@@ -41,10 +41,10 @@ Thanks for reading!</description>
         
         <item>
             <title>iTerm2 with oh-my-zsh</title>
-            <link>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</link>
+            <link>http://proshik.github.io/post/2016-12-10-iterm2-for-macos/</link>
             <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</guid>
+            <guid>http://proshik.github.io/post/2016-12-10-iterm2-for-macos/</guid>
             <description>&lt;p&gt;iTerm2 is a replacement for Terminal and the successor to iTerm.&lt;/p&gt;
 
 &lt;p&gt;Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout&amp;hellip;&lt;/p&gt;
@@ -54,10 +54,10 @@ Thanks for reading!</description>
         
         <item>
             <title>Установка Samba в Ubuntu для доступа из macOS</title>
-            <link>http://proshik.github.io/blog/2016-03-17-samba-for-macos/</link>
+            <link>http://proshik.github.io/post/2016-03-17-samba-for-macos/</link>
             <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-03-17-samba-for-macos/</guid>
+            <guid>http://proshik.github.io/post/2016-03-17-samba-for-macos/</guid>
             <description>&lt;p&gt;&lt;em&gt;Samba&lt;/em&gt; — пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
 Имеет клиентскую и серверную части. Является свободным программным обеспечением, выпущена под лицензией GPL.&lt;/p&gt;
 
@@ -69,10 +69,10 @@ Thanks for reading!</description>
         
         <item>
             <title>Vagrant. Introduction. Part 1</title>
-            <link>http://proshik.github.io/blog/2016-03-09-vagrant-introduction/</link>
+            <link>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</link>
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-03-09-vagrant-introduction/</guid>
+            <guid>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</guid>
             <description>&lt;p&gt;Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI.
 Мы будем использовать в качестве &lt;em&gt;провайдера&lt;/em&gt; VirtualBox, но для этой цели так-же подходит VMWare, LXC и.др.
 Для чего это может быть нужно:&lt;/p&gt;
@@ -82,10 +82,10 @@ Thanks for reading!</description>
         
         <item>
             <title>Syntax highlighting in vim for macOS</title>
-            <link>http://proshik.github.io/blog/2016-03-08-vimrc/</link>
+            <link>http://proshik.github.io/post/2016-03-08-vimrc/</link>
             <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-03-08-vimrc/</guid>
+            <guid>http://proshik.github.io/post/2016-03-08-vimrc/</guid>
             <description>Почему-то по умолчанию в OS X в терминале для vim не была активирована подсветка синтаксиса. Решается просто.
 Нагуглилось вот что. Надо создать файл в директории /Users/your-username/ файл .vimrc, если его там еще не было и прописать:
 filetype plugin indent on syntax on  </description>
@@ -93,10 +93,10 @@ filetype plugin indent on syntax on  </description>
         
         <item>
             <title>Linux commands</title>
-            <link>http://proshik.github.io/blog/2015-07-08-linux-commands/</link>
+            <link>http://proshik.github.io/post/2015-07-08-linux-commands/</link>
             <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2015-07-08-linux-commands/</guid>
+            <guid>http://proshik.github.io/post/2015-07-08-linux-commands/</guid>
             <description>&lt;p&gt;Перечень некоторых полезных команд.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -104,10 +104,10 @@ filetype plugin indent on syntax on  </description>
         
         <item>
             <title>After Ubuntu installation</title>
-            <link>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</link>
+            <link>http://proshik.github.io/post/2015-04-12-after-ubuntu-install/</link>
             <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</guid>
+            <guid>http://proshik.github.io/post/2015-04-12-after-ubuntu-install/</guid>
             <description>&lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
 проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
 Решил, что форточка под номером 7, соверешнно не то, взял лишний жесткий и поставил на него

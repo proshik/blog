@@ -13,10 +13,10 @@
         
         <item>
             <title>iTerm2 with oh-my-zsh</title>
-            <link>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</link>
+            <link>http://proshik.github.io/post/2016-12-10-iterm2-for-macos/</link>
             <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</guid>
+            <guid>http://proshik.github.io/post/2016-12-10-iterm2-for-macos/</guid>
             <description>&lt;p&gt;iTerm2 is a replacement for Terminal and the successor to iTerm.&lt;/p&gt;
 
 &lt;p&gt;Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout&amp;hellip;&lt;/p&gt;

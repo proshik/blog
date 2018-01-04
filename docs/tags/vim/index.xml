@@ -13,10 +13,10 @@
         
         <item>
             <title>Syntax highlighting in vim for macOS</title>
-            <link>http://proshik.github.io/blog/2016-03-08-vimrc/</link>
+            <link>http://proshik.github.io/post/2016-03-08-vimrc/</link>
             <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/blog/2016-03-08-vimrc/</guid>
+            <guid>http://proshik.github.io/post/2016-03-08-vimrc/</guid>
             <description>Почему-то по умолчанию в OS X в терминале для vim не была активирована подсветка синтаксиса. Решается просто.
 Нагуглилось вот что. Надо создать файл в директории /Users/your-username/ файл .vimrc, если его там еще не было и прописать:
 filetype plugin indent on syntax on  </description>

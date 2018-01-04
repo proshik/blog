@@ -21,7 +21,7 @@ publishDir = "docs"
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = false
     post_navigation = true
-    postSections = ["blog","code"]
+    postSections = ["post","project"]
 
 [Params.widgets]
     search = true # Enable "Search" widget
