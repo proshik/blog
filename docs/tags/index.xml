@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Prokhor Krylov</title>
-        <link>http://proshik.github.io/tags/</link>
+        <link>http://proshik.ru/tags/</link>
         <description>Recent content in Tags on Prokhor Krylov</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="http://proshik.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://proshik.ru/tags/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>Iterm2</title>
-            <link>http://proshik.github.io/tags/iterm2/</link>
+            <link>http://proshik.ru/tags/iterm2/</link>
             <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/iterm2/</guid>
+            <guid>http://proshik.ru/tags/iterm2/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Linux</title>
-            <link>http://proshik.github.io/tags/linux/</link>
+            <link>http://proshik.ru/tags/linux/</link>
             <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/linux/</guid>
+            <guid>http://proshik.ru/tags/linux/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Macos</title>
-            <link>http://proshik.github.io/tags/macos/</link>
+            <link>http://proshik.ru/tags/macos/</link>
             <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/macos/</guid>
+            <guid>http://proshik.ru/tags/macos/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Oh My Zsh</title>
-            <link>http://proshik.github.io/tags/oh-my-zsh/</link>
+            <link>http://proshik.ru/tags/oh-my-zsh/</link>
             <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/oh-my-zsh/</guid>
+            <guid>http://proshik.ru/tags/oh-my-zsh/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Samba</title>
-            <link>http://proshik.github.io/tags/samba/</link>
+            <link>http://proshik.ru/tags/samba/</link>
             <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/samba/</guid>
+            <guid>http://proshik.ru/tags/samba/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Ubuntu</title>
-            <link>http://proshik.github.io/tags/ubuntu/</link>
+            <link>http://proshik.ru/tags/ubuntu/</link>
             <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/ubuntu/</guid>
+            <guid>http://proshik.ru/tags/ubuntu/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Vagrant</title>
-            <link>http://proshik.github.io/tags/vagrant/</link>
+            <link>http://proshik.ru/tags/vagrant/</link>
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/vagrant/</guid>
+            <guid>http://proshik.ru/tags/vagrant/</guid>
             <description></description>
         </item>
         
         <item>
             <title>Vim</title>
-            <link>http://proshik.github.io/tags/vim/</link>
+            <link>http://proshik.ru/tags/vim/</link>
             <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/tags/vim/</guid>
+            <guid>http://proshik.ru/tags/vim/</guid>
             <description></description>
         </item>
         

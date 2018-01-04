@@ -1,4 +1,4 @@
-baseurl = "http://proshik.github.io"
+baseurl = "http://proshik.ru"
 title = "Prokhor Krylov"
 languageCode = "en-us"
 paginate = "5" # Number of posts per page

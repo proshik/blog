@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Devops on Prokhor Krylov</title>
-        <link>http://proshik.github.io/categories/devops/</link>
+        <link>http://proshik.ru/categories/devops/</link>
         <description>Recent content in Devops on Prokhor Krylov</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="http://proshik.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://proshik.ru/categories/devops/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>Vagrant. Introduction. Part 1</title>
-            <link>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</link>
+            <link>http://proshik.ru/post/2016-03-09-vagrant-introduction/</link>
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://proshik.github.io/post/2016-03-09-vagrant-introduction/</guid>
+            <guid>http://proshik.ru/post/2016-03-09-vagrant-introduction/</guid>
             <description>&lt;p&gt;Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI.
 Мы будем использовать в качестве &lt;em&gt;провайдера&lt;/em&gt; VirtualBox, но для этой цели так-же подходит VMWare, LXC и.др.
 Для чего это может быть нужно:&lt;/p&gt;
