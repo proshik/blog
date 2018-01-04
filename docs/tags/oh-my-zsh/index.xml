@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oh My Zsh on Prokhor Krylov</title>
+    <link>http://proshik.github.io/tags/oh-my-zsh/</link>
+    <description>Recent content in Oh My Zsh on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://proshik.github.io/tags/oh-my-zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iTerm2 with oh-my-zsh</title>
+      <link>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</guid>
+      <description>&lt;p&gt;iTerm2 is a replacement for Terminal and the successor to iTerm.&lt;/p&gt;
+
+&lt;p&gt;Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

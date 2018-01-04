@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Prokhor Krylov</title>
+    <link>http://proshik.github.io/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://proshik.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux commands</title>
+      <link>http://proshik.github.io/blog/2015-07-08-linux-commands/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2015-07-08-linux-commands/</guid>
+      <description>&lt;p&gt;Перечень некоторых полезных команд.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>After Ubuntu installation</title>
+      <link>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</link>
+      <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</guid>
+      <description>&lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
+проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
+Решил, что форточка под номером 7, соверешнно не то, взял лишний жесткий и поставил на него
+Ubuntu. Только вот оказалось я ежедневно пользуюсь таким большим количеством программ,
+что пришлось вспоминать как же все это устанавливать. Я вообще удивляюсь, как люди запоминают
+название всех этих зависимостей и команд linux.&lt;/p&gt;
+
+&lt;p&gt;Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

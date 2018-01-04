@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on Prokhor Krylov</title>
+    <link>http://proshik.github.io/categories/other/</link>
+    <description>Recent content in Other on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://proshik.github.io/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iTerm2 with oh-my-zsh</title>
+      <link>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2016-12-10-iterm2-for-macos/</guid>
+      <description>&lt;p&gt;iTerm2 is a replacement for Terminal and the successor to iTerm.&lt;/p&gt;
+
+&lt;p&gt;Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Установка Samba в Ubuntu для доступа из macOS</title>
+      <link>http://proshik.github.io/blog/2016-03-17-samba-for-macos/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2016-03-17-samba-for-macos/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Samba&lt;/em&gt; — пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
+Имеет клиентскую и серверную части. Является свободным программным обеспечением, выпущена под лицензией GPL.&lt;/p&gt;
+
+&lt;p&gt;Samba работает на большинстве Unix-подобных систем, таких как GNU/Linux, POSIX-совместимых Solaris и Mac OS X Server, на различных вариантах BSD,
+в OS/2, Windows. Samba включена практически во все дистрибутивы GNU/Linux, в том числе, конечно, и в Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Syntax highlighting in vim for macOS</title>
+      <link>http://proshik.github.io/blog/2016-03-08-vimrc/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2016-03-08-vimrc/</guid>
+      <description>Почему-то по умолчанию в OS X в терминале для vim не была активирована подсветка синтаксиса. Решается просто.
+Нагуглилось вот что. Надо создать файл в директории /Users/your-username/ файл .vimrc, если его там еще не было и прописать:
+filetype plugin indent on syntax on  </description>
+    </item>
+    
+    <item>
+      <title>Linux commands</title>
+      <link>http://proshik.github.io/blog/2015-07-08-linux-commands/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2015-07-08-linux-commands/</guid>
+      <description>&lt;p&gt;Перечень некоторых полезных команд.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>After Ubuntu installation</title>
+      <link>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</link>
+      <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://proshik.github.io/blog/2015-04-12-after-ubuntu-install/</guid>
+      <description>&lt;p&gt;В очередной раз вернувшись на малую родину, с уверенностью, что будет мало свободного времени, а
+проверить почту, почитать новости мне хватит и планшета, естественно оказался не прав.
+Решил, что форточка под номером 7, соверешнно не то, взял лишний жесткий и поставил на него
+Ubuntu. Только вот оказалось я ежедневно пользуюсь таким большим количеством программ,
+что пришлось вспоминать как же все это устанавливать. Я вообще удивляюсь, как люди запоминают
+название всех этих зависимостей и команд linux.&lt;/p&gt;
+
+&lt;p&gt;Поэтому вот памятка, что надо поставить после наката дистрибутива, для себя и людей, кому это может быть полезно.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

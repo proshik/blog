@@ -1,0 +1,38 @@
+baseurl = "http://proshik.github.io"
+title = "Prokhor Krylov"
+languageCode = "en-us"
+paginate = "5" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "proshik" # Enable comments by entering your Disqus shortname
+googleAnalytics = "UA-75725805-1" # Enable Google Analytics by entering your tracking id
+# https://pages.github.com/ configuration
+publishDir = "docs"
+
+[Author]
+    name = "Krylov Prokhor"
+    bio = "Software developer"
+    avatar = "/media/logo.png"
+
+[Params]
+    subtitle = "triumph of ignorance" # Subtitle of your site
+    description = "Prokhor Krylov Personal blog about technical things" # Description of your site
+    opengraph = true
+    readmore = false # Show "Read more" button in list if true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = false
+    post_navigation = true
+    postSections = ["blog","code"]
+
+[Params.widgets]
+    search = true # Enable "Search" widget
+    recent_articles = true # Enable "Recent arcticles" widget
+    recent_articles_num = 5
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+    #social
+    social_github = "proshik"
+    social_linkedin = "prokhor-krylov-a02757a4?trk=hp-identity-name"
+    social_email = "proxoraleksandrovich@gmail.com"
+
+
