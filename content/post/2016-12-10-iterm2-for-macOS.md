@@ -8,7 +8,7 @@ tags = [
     "iterm2",
     "oh-my-zsh"
 ]
-thumbnail = "/media/2016-12-10-iterm2-for-macOS/iterm-title.png"
+thumbnail = "/media/2016-12-10-iterm2-for-macOS/thumbnail.png"
 +++
 
 iTerm2 is a replacement for Terminal and the successor to iTerm.

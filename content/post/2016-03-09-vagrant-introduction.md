@@ -7,7 +7,7 @@ categories = [
 tags = [ 
     "vagrant"
 ]
-thumbnail = "/media/2016-03-10-vagrant-introduction/vagrant_.png"
+thumbnail = "/media/2016-03-10-vagrant-introduction/thumbnail.png"
 +++
 
 Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI. 

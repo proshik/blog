@@ -45,6 +45,11 @@ Thanks for reading!</description>
             <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
             
             <guid>http://proshik.ru/post/2016-12-10-iterm2-for-macos/</guid>
+            <figure>
+                <a href="http://proshik.ru/post/2016-12-10-iterm2-for-macos/">
+                    <img src="/media/2016-12-10-iterm2-for-macOS/thumbnail.png" alt="iTerm2 with oh-my-zsh" />
+                </a>
+            </figure>
             <description>&lt;p&gt;iTerm2 is a replacement for Terminal and the successor to iTerm.&lt;/p&gt;
 
 &lt;p&gt;Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout&amp;hellip;&lt;/p&gt;
@@ -73,6 +78,11 @@ Thanks for reading!</description>
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
             <guid>http://proshik.ru/post/2016-03-09-vagrant-introduction/</guid>
+            <figure>
+                <a href="http://proshik.ru/post/2016-03-09-vagrant-introduction/">
+                    <img src="/media/2016-03-10-vagrant-introduction/thumbnail.png" alt="Vagrant. Introduction. Part 1" />
+                </a>
+            </figure>
             <description>&lt;p&gt;Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI.
 Мы будем использовать в качестве &lt;em&gt;провайдера&lt;/em&gt; VirtualBox, но для этой цели так-же подходит VMWare, LXC и.др.
 Для чего это может быть нужно:&lt;/p&gt;
@@ -97,6 +107,11 @@ filetype plugin indent on syntax on  </description>
             <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
             
             <guid>http://proshik.ru/post/2015-07-08-linux-commands/</guid>
+            <figure>
+                <a href="http://proshik.ru/post/2015-07-08-linux-commands/">
+                    <img src="/media/2015-07-08-linux-commands/thumbnail.png" alt="Linux commands" />
+                </a>
+            </figure>
             <description>&lt;p&gt;Перечень некоторых полезных команд.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

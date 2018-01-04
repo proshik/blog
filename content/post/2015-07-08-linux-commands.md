@@ -8,7 +8,7 @@ tags = [
     "linux", 
     "ubuntu" 
 ]
-thumbnail = "/media/2015-07-08-linux-commands/linux_commands.png"
+thumbnail = "/media/2015-07-08-linux-commands/thumbnail.png"
 +++
 
 Перечень некоторых полезных команд.
