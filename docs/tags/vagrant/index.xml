@@ -17,11 +17,9 @@
             <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
             
             <guid>http://proshik.ru/post/2016-03-09-vagrant-introduction/</guid>
-            <figure>
                 <a href="http://proshik.ru/post/2016-03-09-vagrant-introduction/">
-                    <img src="/media/2016-03-10-vagrant-introduction/thumbnail.png" alt="Vagrant. Introduction. Part 1" />
+                    <img src="http://proshik.ru/media/2016-03-10-vagrant-introduction/thumbnail.png" alt="Vagrant. Introduction. Part 1" />
                 </a>
-            </figure>
             <description>&lt;p&gt;Vagrant - это такая утилита, позволяющая быстро и легко создавать и запускать виртуалки через CLI.
 Мы будем использовать в качестве &lt;em&gt;провайдера&lt;/em&gt; VirtualBox, но для этой цели так-же подходит VMWare, LXC и.др.
 Для чего это может быть нужно:&lt;/p&gt;
