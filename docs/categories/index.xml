@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Categories on Prokhor Krylov</title>
-        <link>http://proshik.ru/categories/</link>
-        <description>Recent content in Categories on Prokhor Krylov</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        
-        <atom:link href="http://proshik.ru/categories/index.xml" rel="self" type="application/rss+xml" />
-        
-        
-        <item>
-            <title>Devops</title>
-            <link>http://proshik.ru/categories/devops/</link>
-            <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/categories/devops/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Other</title>
-            <link>http://proshik.ru/categories/other/</link>
-            <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/categories/other/</guid>
-            <description></description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Categories on Prokhor Krylov</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Devops</title>
+      <link>/categories/devops/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>/categories/other/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/other/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

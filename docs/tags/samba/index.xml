@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Samba on Prokhor Krylov</title>
-        <link>http://proshik.ru/tags/samba/</link>
-        <description>Recent content in Samba on Prokhor Krylov</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Thu, 17 Mar 2016 00:00:00 +0000</lastBuildDate>
-        
-        <atom:link href="http://proshik.ru/tags/samba/index.xml" rel="self" type="application/rss+xml" />
-        
-        
-        <item>
-            <title>Установка Samba в Ubuntu для доступа из macOS</title>
-            <link>http://proshik.ru/post/2016-03-17-samba-for-macos/</link>
-            <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/post/2016-03-17-samba-for-macos/</guid>
-            <description>&lt;p&gt;&lt;em&gt;Samba&lt;/em&gt; — пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
+  <channel>
+    <title>Samba on Prokhor Krylov</title>
+    <link>/tags/samba/</link>
+    <description>Recent content in Samba on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Установка Samba в Ubuntu для доступа из macOS</title>
+      <link>/post/2016-03-17-samba-for-macos/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016-03-17-samba-for-macos/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Samba&lt;/em&gt; — пакет программ, которые позволяют обращаться к сетевым дискам и принтерам на различных операционных системах по протоколу SMB/CIFS.
 Имеет клиентскую и серверную части. Является свободным программным обеспечением, выпущена под лицензией GPL.&lt;/p&gt;
 
 &lt;p&gt;Samba работает на большинстве Unix-подобных систем, таких как GNU/Linux, POSIX-совместимых Solaris и Mac OS X Server, на различных вариантах BSD,
 в OS/2, Windows. Samba включена практически во все дистрибутивы GNU/Linux, в том числе, конечно, и в Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-        </item>
-        
-    </channel>
+    </item>
+    
+  </channel>
 </rss>

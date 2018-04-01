@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Vim on Prokhor Krylov</title>
-        <link>http://proshik.ru/tags/vim/</link>
-        <description>Recent content in Vim on Prokhor Krylov</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate>
-        
-        <atom:link href="http://proshik.ru/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-        
-        
-        <item>
-            <title>Syntax highlighting in vim for macOS</title>
-            <link>http://proshik.ru/post/2016-03-08-vimrc/</link>
-            <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/post/2016-03-08-vimrc/</guid>
-            <description>Почему-то по умолчанию в OS X в терминале для vim не была активирована подсветка синтаксиса. Решается просто.
+  <channel>
+    <title>Vim on Prokhor Krylov</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syntax highlighting in vim for macOS</title>
+      <link>/post/2016-03-08-vimrc/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016-03-08-vimrc/</guid>
+      <description>Почему-то по умолчанию в OS X в терминале для vim не была активирована подсветка синтаксиса. Решается просто.
 Нагуглилось вот что. Надо создать файл в директории /Users/your-username/ файл .vimrc, если его там еще не было и прописать:
 filetype plugin indent on syntax on  </description>
-        </item>
-        
-    </channel>
+    </item>
+    
+  </channel>
 </rss>

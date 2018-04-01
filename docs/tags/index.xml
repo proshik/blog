@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Tags on Prokhor Krylov</title>
-        <link>http://proshik.ru/tags/</link>
-        <description>Recent content in Tags on Prokhor Krylov</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
-        
-        <atom:link href="http://proshik.ru/tags/index.xml" rel="self" type="application/rss+xml" />
-        
-        
-        <item>
-            <title>Iterm2</title>
-            <link>http://proshik.ru/tags/iterm2/</link>
-            <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/iterm2/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Linux</title>
-            <link>http://proshik.ru/tags/linux/</link>
-            <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/linux/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Macos</title>
-            <link>http://proshik.ru/tags/macos/</link>
-            <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/macos/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Oh My Zsh</title>
-            <link>http://proshik.ru/tags/oh-my-zsh/</link>
-            <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/oh-my-zsh/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Samba</title>
-            <link>http://proshik.ru/tags/samba/</link>
-            <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/samba/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Ubuntu</title>
-            <link>http://proshik.ru/tags/ubuntu/</link>
-            <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/ubuntu/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Vagrant</title>
-            <link>http://proshik.ru/tags/vagrant/</link>
-            <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/vagrant/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>Vim</title>
-            <link>http://proshik.ru/tags/vim/</link>
-            <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-            
-            <guid>http://proshik.ru/tags/vim/</guid>
-            <description></description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Tags on Prokhor Krylov</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Prokhor Krylov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Iterm2</title>
+      <link>/tags/iterm2/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/iterm2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macos</title>
+      <link>/tags/macos/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oh My Zsh</title>
+      <link>/tags/oh-my-zsh/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/oh-my-zsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Samba</title>
+      <link>/tags/samba/</link>
+      <pubDate>Thu, 17 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/samba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>/tags/vagrant/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vagrant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
