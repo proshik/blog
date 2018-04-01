@@ -19,3 +19,5 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q -a)
 
 docker exec -it heuristic_mccarthy /bin/bash
+
+
