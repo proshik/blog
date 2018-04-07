@@ -1,6 +1,7 @@
 +++
-title = "Docker. ."
-date = "2018-01-03"
+title = "Docker. Основные понятия и примеры."
+//TODO
+date = ""
 categories = [
     "DevOps"
 ]

@@ -1,11 +1,11 @@
 +++
-title = "Traefik. Запуск, настройка и развертывание"
-date = "2018-04-01"
+title = "Traefik. Основные понятия"
+date = ""
 categories = [
     "DevOps"
 ]
 tags = [ 
-    "traefik,docker"
+    "traefik, docker"
 ]
 draft = true
 +++
