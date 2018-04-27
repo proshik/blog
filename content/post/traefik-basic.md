@@ -102,7 +102,7 @@ services:
     labels:
       - traefik.frontend.rule=Host:portainer.environment.proshik.ru
       - traefik.backend=portainer-ui
-      - raefik.docker.network=default
+      - traefik.docker.network=default
       - traefik.port=9000
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
